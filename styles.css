@@ -519,6 +519,10 @@ img { max-width: 100%; }
   .reserve-modal .reserve-map { min-height: 260px; height: 260px; }
   .reserve-modal .reserve-details { max-height: calc(90vh - 260px); }
   .tri-heading { white-space: normal; }
+  .tri-heading span { display: block; }
+  .footer { flex-direction: column; text-align: center; }
+  .footer-brand { flex-direction: column; gap: 10px; }
+  .footer-logo-row { justify-content: center; }
 }
 @media (max-width: 640px) {
   .cards3 { grid-template-columns: 1fr; }
