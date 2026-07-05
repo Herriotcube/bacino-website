@@ -78,10 +78,9 @@
   function goToDish(catKey, name, sectionKey) {
     state.section = sectionKey || "food";
     state.tab = catKey;
-    state.hlActive = null;
+    setActiveCard(null);
     const domId = "dish-" + slug(name);
     state.flashDish = domId;
-    renderHighlights();
     renderMenu();
     scrollToDish(name);
     clearTimeout(goToDish._t);
@@ -106,11 +105,24 @@
     requestAnimationFrame(attempt);
   }
 
-  function renderHighlights() {
+  const cardEls = [];
+
+  function setActiveCard(i) {
+    if (state.hlActive === i) return;
+    if (state.hlActive !== null && cardEls[state.hlActive]) {
+      cardEls[state.hlActive].classList.remove("active");
+    }
+    state.hlActive = i;
+    if (i !== null && cardEls[i]) {
+      cardEls[i].classList.add("active");
+    }
+  }
+
+  function buildHighlights() {
     highlightCardsEl.innerHTML = "";
     HIGHLIGHTS.forEach((h, i) => {
       const card = document.createElement("div");
-      card.className = "hl-card" + (state.hlActive === i ? " active" : "");
+      card.className = "hl-card";
 
       card.innerHTML =
         '<img class="hl-card-img" style="background:' + h.bg + '" src="' + h.img + '" alt="' + h.title + '">' +
@@ -144,14 +156,14 @@
         });
       });
 
-      card.addEventListener("mouseenter", () => { state.hlActive = i; renderHighlights(); });
-      card.addEventListener("mouseleave", () => { state.hlActive = null; renderHighlights(); });
+      card.addEventListener("mouseenter", () => setActiveCard(i));
+      card.addEventListener("mouseleave", () => setActiveCard(null));
       card.addEventListener("click", (e) => {
         if (e.target.closest(".hl-card-cta") || e.target.closest(".hl-overlay-dish")) return;
-        state.hlActive = state.hlActive === i ? null : i;
-        renderHighlights();
+        setActiveCard(state.hlActive === i ? null : i);
       });
 
+      cardEls[i] = card;
       highlightCardsEl.appendChild(card);
     });
   }
@@ -310,7 +322,7 @@
   });
 
   /* ===== Init ===== */
-  renderHighlights();
+  buildHighlights();
   renderMenu();
   renderFaq();
 })();
