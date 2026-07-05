@@ -18,10 +18,15 @@
   /* ===== Nav scroll state ===== */
   const nav = document.getElementById("nav");
   const sentinel = document.getElementById("nav-sentinel");
+  function updateNavHeight() {
+    document.documentElement.style.setProperty("--nav-height", nav.offsetHeight + "px");
+  }
   function updateNavScrolled() {
     const scrolled = sentinel ? sentinel.getBoundingClientRect().top <= 8 : window.scrollY > 60;
     nav.classList.toggle("scrolled", scrolled);
+    updateNavHeight();
   }
+  updateNavHeight();
   window.addEventListener("scroll", updateNavScrolled, true);
   window.addEventListener("resize", updateNavScrolled);
   if (sentinel && "IntersectionObserver" in window) {
