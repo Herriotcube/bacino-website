@@ -539,3 +539,10 @@ br.mobile-break { display: none; }
 @media (max-width: 420px) {
   .visit-hours { grid-template-columns: 1fr; }
 }
+
+/* background-attachment:fixed causes visible flicker/jank on touch-scroll
+   devices (mobile Chrome/Safari repaint it poorly); use normal scroll there
+   and keep the fixed parallax only where a real mouse is present. */
+@media (hover: none), (pointer: coarse) {
+  .reviews-section, .faq-section { background-attachment: scroll; }
+}
