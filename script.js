@@ -294,9 +294,10 @@
     MENU_DATA.faqs.forEach((f, i) => {
       const item = document.createElement("div");
       item.className = "faq-item" + (state.faqOpen === i ? " open" : "");
+      const answerHtml = f.a.split("\n").filter((t) => t.length).map((t) => "<p>" + t + "</p>").join("");
       item.innerHTML =
         '<button type="button" class="faq-question"><span>' + f.q + '</span><span class="faq-icon">+</span></button>' +
-        '<div class="faq-answer"><p>' + f.a + '</p></div>';
+        '<div class="faq-answer">' + answerHtml + '</div>';
       item.querySelector(".faq-question").addEventListener("click", () => {
         state.faqOpen = state.faqOpen === i ? null : i;
         renderFaq();
