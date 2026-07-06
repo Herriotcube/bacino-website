@@ -151,6 +151,7 @@ br.mobile-break { display: none; }
   min-height: 100vh;
   display: flex; flex-direction: column; justify-content: center;
   padding: clamp(40px, 6vw, 96px);
+  padding-top: max(clamp(40px, 6vw, 96px), calc(var(--nav-height, 88px) + 24px));
   max-width: 820px;
   animation: riseIn 0.8s ease both;
 }
@@ -514,7 +515,6 @@ br.mobile-break { display: none; }
 @media (max-width: 820px) {
   .nav, .nav.scrolled { flex-direction: column; height: auto; padding-top: 12px; padding-bottom: 12px; gap: 10px; }
   .nav-links { flex-wrap: wrap; justify-content: center; gap: 10px 16px; row-gap: 8px; }
-  .hero-content { padding-top: calc(var(--nav-height, 230px) + 24px); }
   .hero-buttons { justify-content: center; }
   .hero-socials { justify-content: center; }
   .visit2 { grid-template-columns: 1fr; }
