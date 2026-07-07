@@ -84,16 +84,12 @@ const MENU_DATA = {
   ],
 
   setlunch: [
-    { key: "sl-starter", label: "Starter", note: "2-Courses S$19 (Main course & Dessert)\n3-Courses S$24 (Starter, Main course & Dessert).\nAdd S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draught.\nAvailable Wednesday to Saturday, excl. public holidays.", items: [
-      { name: "Mixed Green Salad", price: "", desc: "Fresh garden leaves." }
-    ]},
-    { key: "sl-main", label: "Main Course", note: "2-Courses S$19 (Main course & Dessert)\n3-Courses S$24 (Starter, Main course & Dessert).\nAdd S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draught.\nAvailable Wednesday to Saturday, excl. public holidays.", items: [
+    { key: "sl-all", label: "Set Lunch", note: "2-Courses S$19 (Main course & Dessert)\n3-Courses S$24 (Starter, Main course & Dessert).\nAdd S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draught.\nAvailable Wednesday to Saturday, excl. public holidays.", items: [
+      { name: "Mixed Green Salad", price: "", desc: "Fresh garden leaves." },
       { name: "Spaghetti Aglio e Olio", price: "", desc: "Garlic, chilli and olive oil. Add tiger prawn, $2 each." },
       { name: "Spaghetti al Pesto", price: "", desc: "Home-made pesto sauce." },
       { name: "Half Margherita Pizza", price: "", desc: "Tomato sauce, mozzarella and basil." },
-      { name: "Half Diavola Pizza", price: "", desc: "Mozzarella, spicy salami and tomato sauce." }
-    ]},
-    { key: "sl-dessert", label: "Dessert", note: "2-Courses S$19 (Main course & Dessert)\n3-Courses S$24 (Starter, Main course & Dessert).\nAdd S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draught.\nAvailable Wednesday to Saturday, excl. public holidays.", items: [
+      { name: "Half Diavola Pizza", price: "", desc: "Mozzarella, spicy salami and tomato sauce." },
       { name: "Gelato", price: "", desc: "One scoop — vanilla, dark chocolate or pistachio." },
       { name: "Tiramisu", price: "", desc: "Coffee and rum soaked sponge, mascarpone and cocoa." }
     ]}

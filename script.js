@@ -204,7 +204,10 @@
 
   function renderCatTabs() {
     catTabsEl.innerHTML = "";
-    sectionData(state.section).forEach((c) => {
+    const cats = sectionData(state.section);
+    catTabsEl.style.display = cats.length <= 1 ? "none" : "";
+    if (cats.length <= 1) return;
+    cats.forEach((c) => {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "cat-btn" + (c.key === state.tab ? " active" : "");
