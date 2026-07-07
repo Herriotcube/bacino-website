@@ -343,6 +343,14 @@ br.mobile-break { display: none; }
   gap: 30px 64px;
 }
 .menu-items > div { min-width: 0; }
+.menu-group-heading {
+  grid-column: 1 / -1;
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--olive); font-size: 13px; line-height: 1.9;
+  margin-top: 8px;
+}
+.menu-group-heading:first-child { margin-top: 0; }
 .menu-item { scroll-margin-top: 110px; padding: 2px 6px; border-radius: 10px; transition: background 0.4s ease; }
 .menu-item.flash { background: rgba(207, 80, 48, 0.16); }
 .menu-item-line { display: flex; align-items: baseline; gap: 10px; }

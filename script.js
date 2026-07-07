@@ -239,6 +239,13 @@
     const cat = currentCategory();
     menuItemsEl.innerHTML = "";
     cat.items.forEach((item) => {
+      if (item.heading) {
+        const heading = document.createElement("div");
+        heading.className = "menu-group-heading";
+        heading.textContent = item.heading;
+        menuItemsEl.appendChild(heading);
+      }
+
       const domId = "dish-" + slug(item.name);
       const row = document.createElement("div");
       row.className = "menu-item" + (state.flashDish === domId ? " flash" : "");
