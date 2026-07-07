@@ -226,7 +226,7 @@
     if (!cat.note) return;
     const isSetlunch = state.section === "setlunch";
     const useHead = isSetlunch || state.section === "specials" || state.section === "drinks" || cat.key === "pizza";
-    const altFrom = isSetlunch ? 2 : Infinity;
+    const altFrom = isSetlunch ? 1 : Infinity;
     cat.note.split("\n").filter((t) => t.length).forEach((text, i) => {
       const line = document.createElement("div");
       line.className = "cat-note-line " + (i >= altFrom ? "alt" : (useHead ? "head" : "base"));
@@ -244,6 +244,12 @@
         heading.className = "menu-group-heading";
         heading.textContent = item.heading;
         menuItemsEl.appendChild(heading);
+      }
+      if (item.orAlt) {
+        const or = document.createElement("div");
+        or.className = "menu-or-divider";
+        or.textContent = "or";
+        menuItemsEl.appendChild(or);
       }
 
       const domId = "dish-" + slug(item.name);
