@@ -353,12 +353,23 @@ br.mobile-break { display: none; }
 .menu-group-heading:first-child { margin-top: 0; }
 .menu-or-divider {
   grid-column: 1 / -1;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   font-family: "Newsreader", serif;
   font-style: italic;
-  font-size: 17px;
-  color: var(--text-faint);
-  margin: -6px 0;
+  font-weight: 600;
+  font-size: 19px;
+  color: var(--olive);
+  margin: 2px 0;
+}
+.menu-or-divider::before, .menu-or-divider::after {
+  content: "";
+  flex: 1;
+  max-width: 100px;
+  height: 1px;
+  background: var(--dotted-line);
 }
 .menu-item { scroll-margin-top: 110px; padding: 2px 6px; border-radius: 10px; transition: background 0.4s ease; }
 .menu-item.flash { background: rgba(207, 80, 48, 0.16); }
