@@ -229,7 +229,7 @@
     const altFrom = isSetlunch ? 1 : Infinity;
     cat.note.split("\n").filter((t) => t.length).forEach((text, i) => {
       const line = document.createElement("div");
-      line.className = "cat-note-line " + (i >= altFrom ? "alt" : (useHead ? "head" : "base"));
+      line.className = "cat-note-line " + (i >= altFrom ? "alt" : (useHead ? "head" : "base")) + (isSetlunch && i === 0 ? " setlunch-price" : "");
       line.textContent = text;
       catNoteEl.appendChild(line);
     });

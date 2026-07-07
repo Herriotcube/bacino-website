@@ -329,6 +329,7 @@ br.mobile-break { display: none; }
   font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--olive); font-size: 13px; line-height: 1.9;
 }
+.cat-note-line.setlunch-price { font-size: 15px; }
 .cat-note-line.base {
   font-family: "Newsreader", serif; font-style: italic;
   font-size: 17px; color: var(--olive); font-weight: 700; line-height: 1.9;
@@ -355,8 +356,9 @@ br.mobile-break { display: none; }
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
+  padding: 0 6px;
   font-family: "Newsreader", serif;
   font-style: italic;
   font-weight: 600;
@@ -364,7 +366,7 @@ br.mobile-break { display: none; }
   color: var(--olive);
   margin: 2px 0;
 }
-.menu-or-divider::before, .menu-or-divider::after {
+.menu-or-divider::after {
   content: "";
   flex: 1;
   max-width: 100px;
