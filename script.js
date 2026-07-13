@@ -311,9 +311,12 @@
       const item = document.createElement("div");
       item.className = "faq-item" + (state.faqOpen === i ? " open" : "");
       const answerHtml = f.a.split("\n").filter((t) => t.length).map((t) => "<p>" + t + "</p>").join("");
+      const answerInner = f.reserveCta
+        ? '<div class="faq-answer-row">' + answerHtml + '<a href="https://www.quandoo.sg/place/bacino-italian-bistro-95676/about?locale=en_GB" target="_blank" rel="noopener" class="btn btn-fill reserve-btn faq-reserve-btn"><i class="fa-solid fa-utensils"></i>Reserve a Table</a></div>'
+        : answerHtml;
       item.innerHTML =
         '<button type="button" class="faq-question"><span>' + f.q + '</span><span class="faq-icon">+</span></button>' +
-        '<div class="faq-answer">' + answerHtml + '</div>';
+        '<div class="faq-answer">' + answerInner + '</div>';
       item.querySelector(".faq-question").addEventListener("click", () => {
         state.faqOpen = state.faqOpen === i ? null : i;
         renderFaq();
@@ -325,11 +328,11 @@
   /* ===== Reservation modal ===== */
   const reserveOverlay = document.getElementById("reserve-overlay");
   const reserveModal = reserveOverlay.querySelector(".reserve-modal");
-  document.querySelectorAll(".reserve-btn").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      reserveOverlay.hidden = false;
-    });
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".reserve-btn");
+    if (!btn) return;
+    e.preventDefault();
+    reserveOverlay.hidden = false;
   });
   document.getElementById("reserve-close").addEventListener("click", () => { reserveOverlay.hidden = true; });
   reserveOverlay.addEventListener("click", () => { reserveOverlay.hidden = true; });

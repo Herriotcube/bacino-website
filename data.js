@@ -188,7 +188,7 @@ const MENU_DATA = {
   ],
 
   faqs: [
-    { q: "Do I need a reservation?", a: "We recommend booking ahead, especially for dinner and during weekends. You can quickly reserve through our Google booking panel, or give us a call. Walk-ins are welcome whenever we have space." },
+    { q: "Do I need a reservation?", a: "We recommend booking ahead, especially for dinner and during weekends. You can quickly reserve through our Quandoo, or give us a call. Walk-ins are welcome whenever we have space.", reserveCta: true },
     { q: "Is there a set lunch?", a: "Yes. From Wednesday to Saturday we serve a set lunch: two courses for $19 or three courses for $24 per person. It's our most popular midday option, so booking is a good idea." },
     { q: "Do you cater to vegetarians and dietary needs?", a: "Absolutely. We have vegetarian antipasti, pasta and our Vegetarian pizza, and many dishes can be adapted. Please let us know about allergies or dietary requirements when you book and our kitchen will do its best to accommodate." },
     { q: "Can I host a private event at Bacino?", a: "You can. Bacino is available for private dining and celebrations. Call us or email hello@bacino.sg with your proposed date, group size and any menu preferences that you have and we'll be happy to put a proposal together for you." },
