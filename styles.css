@@ -431,7 +431,7 @@ br.mobile-break { display: none; }
 .visit-contact-link + .visit-contact-link { margin-top: 4px; }
 .visit-contact-link i { color: #ffffff; font-size: 15px; width: 18px; text-align: center; }
 .visit-muted { color: #a8977a; }
-.visit-img { width: 100%; height: 465px; min-height: 360px; border-radius: 22px; object-fit: contain; }
+.visit-img { width: 100%; height: 465px; min-height: 360px; border-radius: 22px; object-fit: contain; border: 0; }
 
 /* ===== FAQ ===== */
 .faq-section {
