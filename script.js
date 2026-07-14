@@ -187,7 +187,7 @@
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "sec-btn" + (s.key === state.section ? " active" : "");
-      btn.innerHTML = s.label + (s.special ? '<img src="assets/chefs-special.png" alt="Chef\'s Special">' : "");
+      btn.innerHTML = s.label + (s.special ? '<img src="assets/chefs-special-small.png" alt="Chef\'s Special">' : "");
       btn.addEventListener("click", () => {
         state.section = s.key;
         state.tab = sectionData(s.key)[0].key;
@@ -268,7 +268,7 @@
       if (item.special) {
         const badge = document.createElement("img");
         badge.className = "menu-item-badge";
-        badge.src = "assets/chefs-special.png";
+        badge.src = "assets/chefs-special-small.png";
         badge.alt = "Chef's Special";
         badge.title = "Chef's Special";
         line.appendChild(badge);
