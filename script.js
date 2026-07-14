@@ -312,7 +312,7 @@
       item.className = "faq-item" + (state.faqOpen === i ? " open" : "");
       const answerHtml = f.a.split("\n").filter((t) => t.length).map((t) => "<p>" + t + "</p>").join("");
       const answerInner = f.reserveCta
-        ? '<div class="faq-answer-row">' + answerHtml + '<a href="https://www.quandoo.sg/place/bacino-italian-bistro-95676/about?locale=en_GB" target="_blank" rel="noopener" class="btn btn-fill reserve-btn faq-reserve-btn"><i class="fa-solid fa-utensils"></i>Reserve a Table</a></div>'
+        ? '<div class="faq-answer-row">' + answerHtml + '<a href="https://www.google.com/maps/reserve/v/dine/c/12nKE7lbdag?source=pa&opi=89978449&hl=en-SG&gei=eFdWau2KNPChseMPhNicCQ&sourceurl=https://www.google.com/search?gs_ssp%3DeJzj4tVP1zc0zDYxTsnOis81YLRSNagwNkxJNLQ0NkkzTjS2sDQ2tDKoMDNKskgxTUo2Tk5MM7EwSPFiS0pMzszLBwAXzhGl%26q%3Dbacino%26oq%3Dbacino%26pf%3Dop%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn btn-fill reserve-btn faq-reserve-btn"><i class="fa-solid fa-utensils"></i>Reserve a Table</a></div>'
         : answerHtml;
       item.innerHTML =
         '<button type="button" class="faq-question"><span>' + f.q + '</span><span class="faq-icon">+</span></button>' +
