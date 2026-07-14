@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="../styles.css?v=12">
+<link rel="stylesheet" href="../styles.css?v=13">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -45,585 +45,604 @@
   <p>Stories, recipes, and news from our trattoria on the west coast.</p>
 </header>
 
+<!-- ===== POPULAR TAGS ===== -->
+<section class="blog-tags-section">
+  <div class="blog-tags-card">
+    <h2 class="blog-tags-title">Popular tags</h2>
+    <div class="blog-tags-list" id="blogTagsList">
+      <button type="button" class="blog-tag-pill" data-tag="italian-cuisine">Italian Cuisine</button>
+      <button type="button" class="blog-tag-pill" data-tag="singapore-dining">Singapore Dining</button>
+      <button type="button" class="blog-tag-pill" data-tag="pasta">Pasta</button>
+      <button type="button" class="blog-tag-pill" data-tag="recipes">Recipes</button>
+      <button type="button" class="blog-tag-pill" data-tag="wine-pairing">Wine Pairing</button>
+      <button type="button" class="blog-tag-pill" data-tag="chef-spotlight">Chef Spotlight</button>
+      <button type="button" class="blog-tag-pill" data-tag="desserts">Desserts</button>
+      <button type="button" class="blog-tag-pill" data-tag="pizza">Pizza</button>
+      <button type="button" class="blog-tag-pill" data-tag="culinary-history">Culinary History</button>
+      <button type="button" class="blog-tag-pill" data-tag="sustainability">Sustainability</button>
+    </div>
+  </div>
+</section>
+
 <!-- ===== BLOG LIST ===== -->
 <section class="blog-list-section">
-  <div class="blog-list">
-    <a class="blog-card" href="best-italian-restaurant-in-singapore-discover-authentic-flavors-at-bacino-italian-bistro-in-the-east/">
+  <div class="blog-list" id="blogList">
+    <a class="blog-card" href="best-italian-restaurant-in-singapore-discover-authentic-flavors-at-bacino-italian-bistro-in-the-east/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,pizza,sustainability">
       <div class="blog-card-date">July 14, 2026</div>
       <h2 class="blog-card-title">Best Italian Restaurant in Singapore: Discover Authentic Flavors at Bacino Italian Bistro</h2>
       <p class="blog-card-excerpt">What makes a truly authentic Italian dining experience in Singapore, and how Bacino brings the flavors of Turin to Pasir Panjang.</p>
     </a>
-    <a class="blog-card" href="meet-the-chef-inside-the-kitchen-of-our-italian-bistro-in-west-singapore/">
+    <a class="blog-card" href="meet-the-chef-inside-the-kitchen-of-our-italian-bistro-in-west-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,pizza,sustainability">
       <div class="blog-card-date">July 14, 2026</div>
       <h2 class="blog-card-title">Meet the Chef: Inside the Kitchen of Our Italian Bistro in West Singapore</h2>
       <p class="blog-card-excerpt">Meet the head chef behind Bacino's kitchen in Pasir Panjang — his journey from Italy, his food philosophy, and the techniques behind our signature dishes.</p>
     </a>
-    <a class="blog-card" href="plan-the-perfect-romantic-evening-in-singapore-at-our-italian-restaurant/">
+    <a class="blog-card" href="plan-the-perfect-romantic-evening-in-singapore-at-our-italian-restaurant/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">July 14, 2026</div>
       <h2 class="blog-card-title">Plan the Perfect Romantic Evening in Singapore at Our Italian Restaurant</h2>
       <p class="blog-card-excerpt">How to plan an unforgettable romantic evening in Singapore — candlelit ambiance, shareable Italian dishes, and the personal touches that make date night special.</p>
     </a>
-    <a class="blog-card" href="the-impact-of-us-tariffs-on-importing-italian-products-to-singapore-and-the-cost-of-dining-out/">
+    <a class="blog-card" href="the-impact-of-us-tariffs-on-importing-italian-products-to-singapore-and-the-cost-of-dining-out/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,pizza">
       <div class="blog-card-date">April 5, 2025</div>
       <h2 class="blog-card-title">The Impact of US Tariffs on Importing Italian Products to Singapore and the Cost of Dining Out</h2>
       <p class="blog-card-excerpt">Introduction to US Tariffs and Their Global Influence Tariffs are taxes imposed by governments on imported goods, aimed at regulating international trade…</p>
     </a>
-    <a class="blog-card" href="bringing-authentic-italian-pizza-to-singapore-a-culinary-journey/">
+    <a class="blog-card" href="bringing-authentic-italian-pizza-to-singapore-a-culinary-journey/" data-tags="italian-cuisine,singapore-dining,recipes,chef-spotlight,pizza,culinary-history">
       <div class="blog-card-date">March 16, 2025</div>
       <h2 class="blog-card-title">Bringing Authentic Italian Pizza to Singapore: A Culinary Journey</h2>
       <p class="blog-card-excerpt">Introduction to Italian Pizza Italian pizza, a culinary emblem of Italy, boasts a rich history that dates back to the 18th century when the first modern…</p>
     </a>
-    <a class="blog-card" href="elevate-your-business-lunch-experience-italian-cuisine-in-singapore/">
+    <a class="blog-card" href="elevate-your-business-lunch-experience-italian-cuisine-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">March 16, 2025</div>
       <h2 class="blog-card-title">Elevate Your Business Lunch Experience: Italian Cuisine in Singapore</h2>
       <p class="blog-card-excerpt">Introduction to Business Lunches In the fast-paced world of corporate environments, business lunches serve as crucial avenues for professional…</p>
     </a>
-    <a class="blog-card" href="discover-the-essence-of-italy-five-must-try-dishes-at-our-restaurant-in-singapore/">
+    <a class="blog-card" href="discover-the-essence-of-italy-five-must-try-dishes-at-our-restaurant-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,culinary-history">
       <div class="blog-card-date">March 16, 2025</div>
       <h2 class="blog-card-title">Discover the Essence of Italy: Five Must-Try Dishes at Our Restaurant in Singapore</h2>
       <p class="blog-card-excerpt">Introduction to Italian Cuisine Italian cuisine is esteemed worldwide for its remarkable ability to blend rich flavors, diverse ingredients, and a storied…</p>
     </a>
-    <a class="blog-card" href="experience-authentic-italian-flavors-at-our-singapore-restaurant-a-sneak-peek-into-our-2025-menu/">
+    <a class="blog-card" href="experience-authentic-italian-flavors-at-our-singapore-restaurant-a-sneak-peek-into-our-2025-menu/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,pizza,culinary-history,sustainability">
       <div class="blog-card-date">March 16, 2025</div>
       <h2 class="blog-card-title">Experience Authentic Italian Flavors at Our Singapore Restaurant: A Sneak Peek into Our 2025 Menu</h2>
       <p class="blog-card-excerpt">Introduction to Our 2025 Menu At our esteemed Italian restaurant in Singapore, we are thrilled to unveil our 2025 menu, which is a testament to our…</p>
     </a>
-    <a class="blog-card" href="exciting-food-trends-in-2025-a-journey-through-italian-culinary-innovation/">
+    <a class="blog-card" href="exciting-food-trends-in-2025-a-journey-through-italian-culinary-innovation/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,culinary-history,sustainability">
       <div class="blog-card-date">March 16, 2025</div>
       <h2 class="blog-card-title">Exciting Food Trends in 2025: A Journey Through Italian Culinary Innovation</h2>
       <p class="blog-card-excerpt">Introduction to 2025 Food Trends The culinary landscape is constantly evolving, reflecting changes in consumer preferences, technological advancements,…</p>
     </a>
-    <a class="blog-card" href="cheers-to-happy-hour-at-bacino-italian-bistro-unwind-with-free-flow-wine-beer-in-east-coast-singapore/">
+    <a class="blog-card" href="cheers-to-happy-hour-at-bacino-italian-bistro-unwind-with-free-flow-wine-beer-in-east-coast-singapore/" data-tags="italian-cuisine,singapore-dining,wine-pairing">
       <div class="blog-card-date">March 2, 2025</div>
       <h2 class="blog-card-title">Cheers to Happy Hour at Bacino Italian Bistro: Unwind with Wine &amp; Beer!</h2>
       <p class="blog-card-excerpt">Looking for the perfect way to unwind after a long day? Say hello to Bacino Italian Bistro’s Happy Hour—your go-to spot for wine, prosecco, and draught…</p>
     </a>
-    <a class="blog-card" href="savor-the-best-italian-cuisine-at-bacino-italian-bistro-your-east-coast-singapore-dining-destination/">
+    <a class="blog-card" href="savor-the-best-italian-cuisine-at-bacino-italian-bistro-your-east-coast-singapore-dining-destination/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">March 2, 2025</div>
       <h2 class="blog-card-title">Savor the Best Italian Cuisine at Bacino Italian Bistro: Your Singapore Dining Destination</h2>
       <p class="blog-card-excerpt">Are you craving authentic Italian flavors in the heart of West, Singapore? Look no further than Bacino Italian Bistro, a hidden gem that’s quickly…</p>
     </a>
-    <a class="blog-card" href="how-to-host-an-italian-food-festival-in-singapore-a-step-by-step-guide/">
+    <a class="blog-card" href="how-to-host-an-italian-food-festival-in-singapore-a-step-by-step-guide/" data-tags="italian-cuisine,singapore-dining,pasta,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">How to Host an Italian Food Festival in Singapore: A Step-by-Step Guide</h2>
       <p class="blog-card-excerpt">Planning Your Italian Food Festival Hosting an Italian food festival in Singapore requires meticulous planning to ensure a memorable experience for…</p>
     </a>
-    <a class="blog-card" href="bacino-italian-restaurants-unique-journey-in-singapore/">
+    <a class="blog-card" href="bacino-italian-restaurants-unique-journey-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Bacino Italian Restaurant’s unique journey in Singapore</h2>
       <p class="blog-card-excerpt">Introduction: A Fusion of Heritage and Local Flavor Welcome to the captivating story of Bacino Italian Restaurant in Singapore—a place where the soul of…</p>
     </a>
-    <a class="blog-card" href="the-art-of-crafting-the-perfect-italian-dinner-insights-from-singapores-top-chefs/">
+    <a class="blog-card" href="the-art-of-crafting-the-perfect-italian-dinner-insights-from-singapores-top-chefs/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Art of Crafting the Perfect Italian Dinner: Insights from Singapore’s Top Chefs</h2>
       <p class="blog-card-excerpt">Understanding the Essence of Italian Cuisine Italian cuisine is revered worldwide not only for its flavorful dishes but also for the principles that…</p>
     </a>
-    <a class="blog-card" href="the-ultimate-guide-to-choosing-the-perfect-italian-dish-for-first-time-diners-in-singapore/">
+    <a class="blog-card" href="the-ultimate-guide-to-choosing-the-perfect-italian-dish-for-first-time-diners-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,wine-pairing,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Ultimate Guide to Choosing the Perfect Italian Dish for First-Time Diners in Singapore</h2>
       <p class="blog-card-excerpt">Understanding Italian Cuisine Italian cuisine is celebrated worldwide for its rich flavors, diverse ingredients, and regional distinctions. The essence of…</p>
     </a>
-    <a class="blog-card" href="delicious-italian-gluten-free-foods-and-desserts-culinary-delights-with-basic-ingredients/">
+    <a class="blog-card" href="delicious-italian-gluten-free-foods-and-desserts-culinary-delights-with-basic-ingredients/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Delicious Italian Gluten-Free Foods and Desserts: Culinary Delights with Basic Ingredients</h2>
       <p class="blog-card-excerpt">Introduction to Italian Gluten-Free Cuisine Italian cuisine is renowned for its rich flavors, diverse ingredients, and heartiness, making it a favorite…</p>
     </a>
-    <a class="blog-card" href="discover-bacino-italian-bistro-the-best-authentic-italian-restaurant-in-east-coast-singapore/">
+    <a class="blog-card" href="discover-bacino-italian-bistro-the-best-authentic-italian-restaurant-in-east-coast-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Discover Bacino Italian Bistro: The Best Authentic Italian Restaurant in West, Singapore</h2>
       <p class="blog-card-excerpt">An Introduction to Bacino Italian Bistro Bacino Italian Bistro, nestled in the heart of West, Singapore, is a culinary gem that prides itself on…</p>
     </a>
-    <a class="blog-card" href="the-evolution-of-italian-restaurants-in-singapore-a-culinary-journey/">
+    <a class="blog-card" href="the-evolution-of-italian-restaurants-in-singapore-a-culinary-journey/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza,culinary-history,sustainability">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Evolution of Italian Restaurants in Singapore: A Culinary Journey</h2>
       <p class="blog-card-excerpt">A Brief History of Italian Cuisine in Singapore The introduction of Italian cuisine in Singapore can be traced back to the early 20th century when Italian…</p>
     </a>
-    <a class="blog-card" href="the-espresso-experience-understanding-italian-coffee-culture/">
+    <a class="blog-card" href="the-espresso-experience-understanding-italian-coffee-culture/" data-tags="italian-cuisine,singapore-dining,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Espresso Experience: Understanding Italian Coffee Culture</h2>
       <p class="blog-card-excerpt">The Origins of Espresso: A Brief History The espresso, an iconic element of Italian coffee culture, traces its roots back to Italy in the early 20th…</p>
     </a>
-    <a class="blog-card" href="the-italian-influence-how-italian-cuisine-shaped-singapores-food-scene/">
+    <a class="blog-card" href="the-italian-influence-how-italian-cuisine-shaped-singapores-food-scene/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,pizza,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Italian Influence: How Italian Cuisine Shaped Singapore’s Food Scene</h2>
       <p class="blog-card-excerpt">A Brief History of Italian Cuisine Italian cuisine boasts a rich and diverse history, deeply intertwined with the cultural narratives and agricultural…</p>
     </a>
-    <a class="blog-card" href="delicious-meat-free-options-in-vegetarian-italian-cuisine/">
+    <a class="blog-card" href="delicious-meat-free-options-in-vegetarian-italian-cuisine/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,sustainability">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Delicious Meat-Free Options in Vegetarian Italian Cuisine</h2>
       <p class="blog-card-excerpt">Introduction to Vegetarian Italian Cuisine Vegetarian Italian cuisine represents a delicious and innovative approach to traditional cooking that has…</p>
     </a>
-    <a class="blog-card" href="the-tradition-of-bread-in-italian-dining-the-baking-process/">
+    <a class="blog-card" href="the-tradition-of-bread-in-italian-dining-the-baking-process/" data-tags="italian-cuisine,singapore-dining,pasta">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Tradition of Bread in Italian Dining: The Baking Process</h2>
       <p class="blog-card-excerpt">The Importance of Bread in Italian Culture Bread holds a place of profound significance within Italian culture, serving not only as a staple food but also…</p>
     </a>
-    <a class="blog-card" href="crafting-the-ideal-italian-cocktail-our-signature-drinks-explained/">
+    <a class="blog-card" href="crafting-the-ideal-italian-cocktail-our-signature-drinks-explained/" data-tags="italian-cuisine,singapore-dining,recipes,wine-pairing,culinary-history,sustainability">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Crafting the Ideal Italian Cocktail: Our Signature Drinks Explained</h2>
       <p class="blog-card-excerpt">The Art of Italian Mixology Italian mixology has a rich history deeply intertwined with the country’s vibrant culture and culinary practices.…</p>
     </a>
-    <a class="blog-card" href="regional-italian-dishes-exploring-the-diversity-of-italys-culinary-landscape/">
+    <a class="blog-card" href="regional-italian-dishes-exploring-the-diversity-of-italys-culinary-landscape/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,desserts,pizza,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Regional Italian Dishes: Exploring the Diversity of Italy’s Culinary Landscape</h2>
       <p class="blog-card-excerpt">Introduction to Italian Regional Cuisine Italy is renowned for its diverse and rich culinary culture, which is intricately tied to regional identity. Each…</p>
     </a>
-    <a class="blog-card" href="the-role-of-herbs-in-italian-cuisine-fresh-flavors-we-love/">
+    <a class="blog-card" href="the-role-of-herbs-in-italian-cuisine-fresh-flavors-we-love/" data-tags="italian-cuisine,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Role of Herbs in Italian Cuisine: Fresh Flavors We Love</h2>
       <p class="blog-card-excerpt">Introduction to Italian Herbs Italian cuisine is renowned for its vibrant flavors, and a significant component of this culinary tradition is the use of…</p>
     </a>
-    <a class="blog-card" href="deliciously-simple-italian-recipes-to-try-at-home/">
+    <a class="blog-card" href="deliciously-simple-italian-recipes-to-try-at-home/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,desserts,pizza,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Deliciously Simple Italian Recipes to Try at Home</h2>
       <p class="blog-card-excerpt">Introduction to Italian Cuisine Italian cuisine is characterized by its rich history and diverse regional influences, making it one of the most revered…</p>
     </a>
-    <a class="blog-card" href="decoding-italian-desserts-from-tiramisu-to-panna-cotta/">
+    <a class="blog-card" href="decoding-italian-desserts-from-tiramisu-to-panna-cotta/" data-tags="italian-cuisine,singapore-dining,recipes,wine-pairing,desserts,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Decoding Italian Desserts: From Tiramisu to Panna Cotta</h2>
       <p class="blog-card-excerpt">The Rich History of Italian Desserts Italian desserts have a storied past, deeply rooted in the cultural tapestry of the various regions of Italy. Each…</p>
     </a>
-    <a class="blog-card" href="exploring-italian-cheeses-a-guide-to-our-cheese-board-selections/">
+    <a class="blog-card" href="exploring-italian-cheeses-a-guide-to-our-cheese-board-selections/" data-tags="italian-cuisine,singapore-dining,recipes,wine-pairing,desserts,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Exploring Italian Cheeses: A Guide to Our Cheese Board Selections</h2>
       <p class="blog-card-excerpt">The Rich History of Italian Cheese Italian cheese has a storied history, deeply intertwined with the country’s agricultural practices and cultural…</p>
     </a>
-    <a class="blog-card" href="the-significance-of-olive-oil-in-italian-cooking-insights-from-our-kitchen/">
+    <a class="blog-card" href="the-significance-of-olive-oil-in-italian-cooking-insights-from-our-kitchen/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,desserts">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Significance of Olive Oil in Italian Cooking: Insights from Our Kitchen</h2>
       <p class="blog-card-excerpt">The Historical Roots of Olive Oil in Italian Cuisine The journey of olive oil in Italian cuisine dates back to ancient civilizations, primarily the Greeks…</p>
     </a>
-    <a class="blog-card" href="seasonal-specials-incorporating-singapores-fresh-produce-into-italian-cuisine/">
+    <a class="blog-card" href="seasonal-specials-incorporating-singapores-fresh-produce-into-italian-cuisine/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,sustainability">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Seasonal Specials: Incorporating Singapore’s Fresh Produce into Italian Cuisine</h2>
       <p class="blog-card-excerpt">The Importance of Fresh Produce in Italian Cuisine Fresh produce holds a fundamental role in Italian cuisine, rooted deeply in the philosophy of ‘farm to…</p>
     </a>
-    <a class="blog-card" href="the-ultimate-wine-pairing-guide-complementing-italian-dishes-with-fine-wines/">
+    <a class="blog-card" href="the-ultimate-wine-pairing-guide-complementing-italian-dishes-with-fine-wines/" data-tags="italian-cuisine,singapore-dining,pasta,wine-pairing,desserts">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Ultimate Wine Pairing Guide: Complementing Italian Dishes with Fine Wines</h2>
       <p class="blog-card-excerpt">Understanding Italian Cuisine and Wine Pairing Basics Italian cuisine is renowned for its rich diversity, encompassing a vast array of regional flavors,…</p>
     </a>
-    <a class="blog-card" href="top-10-must-try-italian-dishes-in-singapore/">
+    <a class="blog-card" href="top-10-must-try-italian-dishes-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,pizza">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Top 10 Must-Try Italian Dishes in Singapore</h2>
       <p class="blog-card-excerpt">Introduction to Italian Cuisine in Singapore Italian cuisine holds a significant place in the culinary landscape of Singapore, where a vibrant blend of…</p>
     </a>
-    <a class="blog-card" href="the-art-of-pasta-making-techniques-and-traditions/">
+    <a class="blog-card" href="the-art-of-pasta-making-techniques-and-traditions/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Art of Pasta Making: Techniques and Traditions</h2>
       <p class="blog-card-excerpt">A Brief History of Pasta Making The history of pasta making is a rich tapestry woven through centuries, originating from ancient civilizations that sought…</p>
     </a>
-    <a class="blog-card" href="behind-the-scenes-a-day-in-the-life-of-our-italian-bistro/">
+    <a class="blog-card" href="behind-the-scenes-a-day-in-the-life-of-our-italian-bistro/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza,culinary-history,sustainability">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Behind the Scenes: A Day in the Life of Our Italian Bistro</h2>
       <p class="blog-card-excerpt">The Morning Preparation Rituals As dawn breaks over our Italian bistro, the first staff members arrive, greeted by the soft glow of kitchen lights and the…</p>
     </a>
-    <a class="blog-card" href="exploring-the-rich-flavors-of-traditional-italian-cuisine/">
+    <a class="blog-card" href="exploring-the-rich-flavors-of-traditional-italian-cuisine/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,pizza,culinary-history">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">Exploring the Rich Flavors of Traditional Italian Cuisine</h2>
       <p class="blog-card-excerpt">Introduction to Italian Cuisine Italian cuisine, renowned worldwide for its rich flavors and diverse dishes, has deep historical roots that reflect the…</p>
     </a>
-    <a class="blog-card" href="the-rise-of-olympic-chocolate-muffins-a-culinary-sensation-during-the-paris-olympics/">
+    <a class="blog-card" href="the-rise-of-olympic-chocolate-muffins-a-culinary-sensation-during-the-paris-olympics/" data-tags="italian-cuisine,singapore-dining,recipes,chef-spotlight,desserts">
       <div class="blog-card-date">February 2, 2025</div>
       <h2 class="blog-card-title">The Rise of Olympic Chocolate Muffins: A Culinary Sensation During the Paris Olympics</h2>
       <p class="blog-card-excerpt">Introduction to Olympic Chocolate Muffins The emergence of Olympic Chocolate Muffins as a culinary sensation during the Paris Olympics has captivated…</p>
     </a>
-    <a class="blog-card" href="a-foodies-guide-to-the-best-restaurants-in-singapore/">
+    <a class="blog-card" href="a-foodies-guide-to-the-best-restaurants-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,chef-spotlight,culinary-history">
       <div class="blog-card-date">January 31, 2025</div>
       <h2 class="blog-card-title">A Foodie’s Guide to the Best Restaurants in Singapore</h2>
       <p class="blog-card-excerpt">Introduction to Singapore’s Culinary Scene Singapore’s culinary landscape is a vibrant tapestry woven from various cultural influences, making it one of…</p>
     </a>
-    <a class="blog-card" href="discover-authentic-italian-cuisine-in-singapore-visit-bacino-italian-bistro-today/">
+    <a class="blog-card" href="discover-authentic-italian-cuisine-in-singapore-visit-bacino-italian-bistro-today/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">July 22, 2024</div>
       <h2 class="blog-card-title">Discover Authentic Italian Cuisine in Singapore Visit Bacino Italian Bistro Today</h2>
       <p class="blog-card-excerpt">Introduction Welcome to Bacino Italian Bistro, a hidden gem nestled in the heart of Singapore’s Pasir Panjang. This charming eatery is more than just a…</p>
     </a>
-    <a class="blog-card" href="experience-the-best-italian-food-in-singapore-at-bacino-italian-bistro-reserve-your-table-now/">
+    <a class="blog-card" href="experience-the-best-italian-food-in-singapore-at-bacino-italian-bistro-reserve-your-table-now/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">July 22, 2024</div>
       <h2 class="blog-card-title">Experience the Best Italian Food in Singapore at Bacino Italian Bistro – Reserve Your Table Now</h2>
       <p class="blog-card-excerpt">Introduction Bacino Italian Bistro is the ultimate destination for authentic Italian cuisine in Singapore. Located in the heart of the West, this charming…</p>
     </a>
-    <a class="blog-card" href="top-rated-italian-restaurant-in-singapore-bacino-italian-bistro-your-next-dining-destination/">
+    <a class="blog-card" href="top-rated-italian-restaurant-in-singapore-bacino-italian-bistro-your-next-dining-destination/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">July 22, 2024</div>
       <h2 class="blog-card-title">Top-Rated Italian Restaurant in Singapore Bacino Italian Bistro – Your Next Dining Destination</h2>
       <p class="blog-card-excerpt">Introduction When it comes to Italian cuisine in Singapore, Bacino Italian Bistro stands out as a top-rated dining destination. Nestled in the vibrant…</p>
     </a>
-    <a class="blog-card" href="celebrate-with-us-hosting-events-and-special-occasions-at-our-restaurant/">
+    <a class="blog-card" href="celebrate-with-us-hosting-events-and-special-occasions-at-our-restaurant/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Celebrate with Us: Hosting Events and Special Occasions at Our Restaurant”</h2>
       <p class="blog-card-excerpt">Introduction Hosting events and special occasions at a restaurant transforms an ordinary dining experience into a memorable celebration. Whether it’s a…</p>
     </a>
-    <a class="blog-card" href="tiramisu-and-beyond-exploring-italys-most-iconic-desserts/">
+    <a class="blog-card" href="tiramisu-and-beyond-exploring-italys-most-iconic-desserts/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,culinary-history">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Tiramisu and Beyond: Exploring Italy’s Most Iconic Desserts”</h2>
       <p class="blog-card-excerpt">Introduction Italian desserts are the epitome of culinary artistry, capturing the essence of Italy’s rich culture and history in every bite. Imagine…</p>
     </a>
-    <a class="blog-card" href="cooking-with-passion-join-our-exclusive-italian-cooking-classes/">
+    <a class="blog-card" href="cooking-with-passion-join-our-exclusive-italian-cooking-classes/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,culinary-history">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Cooking with Passion: Join Our Exclusive Italian Cooking Classes”</h2>
       <p class="blog-card-excerpt">Introduction Ever dreamt of cooking with passion, just like an Italian nonna? Our exclusive Italian cooking classes are your gateway to immersing in the…</p>
     </a>
-    <a class="blog-card" href="the-perfect-italian-meal-how-to-create-an-authentic-dining-experience/">
+    <a class="blog-card" href="the-perfect-italian-meal-how-to-create-an-authentic-dining-experience/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“The Perfect Italian Meal: How to Create an Authentic Dining Experience”</h2>
       <p class="blog-card-excerpt">Introduction Creating the perfect Italian meal is more than just following a recipe; it’s about immersing yourself in an authentic dining experience that…</p>
     </a>
-    <a class="blog-card" href="italian-food-culture-stories-and-traditions-behind-our-favorite-dishes/">
+    <a class="blog-card" href="italian-food-culture-stories-and-traditions-behind-our-favorite-dishes/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,culinary-history">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Italian Food Culture: Stories and Traditions Behind Our Favorite Dishes”</h2>
       <p class="blog-card-excerpt">Introduction Italian food culture is a vibrant tapestry of flavors, stories, and traditions that go beyond just the taste and ingredients. It’s a culinary…</p>
     </a>
-    <a class="blog-card" href="a-taste-of-italy-in-singapore-our-restaurants-journey-and-vision/">
+    <a class="blog-card" href="a-taste-of-italy-in-singapore-our-restaurants-journey-and-vision/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,culinary-history,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“A Taste of Italy in Singapore: Our Restaurant’s Journey and Vision”</h2>
       <p class="blog-card-excerpt">Introduction When you think of Italian cuisine in Singapore, you might immediately think of pizza and pasta. But there’s so much more! Italian food is a…</p>
     </a>
-    <a class="blog-card" href="from-farm-to-table-the-fresh-ingredients-behind-our-menu/">
+    <a class="blog-card" href="from-farm-to-table-the-fresh-ingredients-behind-our-menu/" data-tags="singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“From Farm to Table: The Fresh Ingredients Behind Our Menu”</h2>
       <p class="blog-card-excerpt">Introduction Imagine biting into a dish where every ingredient tells a story. That’s the magic of the From Farm to Table concept. This approach emphasizes…</p>
     </a>
-    <a class="blog-card" href="top-5-italian-dishes-you-must-try-at-our-singapore-restaurant/">
+    <a class="blog-card" href="top-5-italian-dishes-you-must-try-at-our-singapore-restaurant/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Top 5 Italian Dishes You Must Try at Our Singapore Restaurant”</h2>
       <p class="blog-card-excerpt">Introduction Italian food has captured the hearts (and stomachs) of Singaporeans, becoming a culinary favorite across the island. From the romance of…</p>
     </a>
-    <a class="blog-card" href="fusing-flavors-how-we-blend-italian-and-singaporean-cuisines/">
+    <a class="blog-card" href="fusing-flavors-how-we-blend-italian-and-singaporean-cuisines/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,culinary-history">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Fusing Flavors: How We Blend Italian and Singaporean Cuisines”</h2>
       <p class="blog-card-excerpt">Introduction Ever wondered what happens when you blend the robust flavors of Italian cuisine with the vibrant and diverse tastes of Singaporean dishes?…</p>
     </a>
-    <a class="blog-card" href="wine-tasting-101-elevate-your-italian-dining-experience-with-expert-tips/">
+    <a class="blog-card" href="wine-tasting-101-elevate-your-italian-dining-experience-with-expert-tips/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,pizza">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Wine Tasting 101: Elevate Your Italian Dining Experience with Expert Tips”</h2>
       <p class="blog-card-excerpt">Introduction Ever wondered why your spaghetti carbonara sings when paired with the perfect glass of wine? This article is your go-to guide on wine tasting…</p>
     </a>
-    <a class="blog-card" href="the-art-of-italian-cooking-techniques-that-make-our-dishes-stand-out/">
+    <a class="blog-card" href="the-art-of-italian-cooking-techniques-that-make-our-dishes-stand-out/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">The Art of Italian Cooking: Techniques That Make Our Dishes Stand Out</h2>
       <p class="blog-card-excerpt">Introduction Italian cuisine has charmed taste buds worldwide. From the bustling streets of Rome to cozy family kitchens in New York, everyone seems to…</p>
     </a>
-    <a class="blog-card" href="health-benefits-of-italian-cuisine-why-mediterranean-food-is-good-for-you/">
+    <a class="blog-card" href="health-benefits-of-italian-cuisine-why-mediterranean-food-is-good-for-you/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,desserts,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Health Benefits of Italian Cuisine: Why Mediterranean Food is Good for You”</h2>
       <p class="blog-card-excerpt">Introduction Ever wondered why Italians seem to have an extra spring in their step and a twinkle in their eye? It might just be la dolce vita, the sweet…</p>
     </a>
-    <a class="blog-card" href="customer-spotlight-unforgettable-dining-experience-at-bacino/">
+    <a class="blog-card" href="customer-spotlight-unforgettable-dining-experience-at-bacino/" data-tags="italian-cuisine,singapore-dining,recipes,wine-pairing,chef-spotlight,desserts,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Customer Spotlight: Unforgettable Dining Experiences</h2>
       <p class="blog-card-excerpt">Introduction Imagine this: a perfectly seared scallop resting on a bed of velvety pea purée, an explosion of flavors in every bite that makes you question…</p>
     </a>
-    <a class="blog-card" href="exploring-italian-desserts-indulge-in-our-sweetest-delights/">
+    <a class="blog-card" href="exploring-italian-desserts-indulge-in-our-sweetest-delights/" data-tags="italian-cuisine,singapore-dining,recipes,wine-pairing,chef-spotlight,desserts,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Exploring Italian Desserts: Indulge in Our Sweetest Delights”</h2>
       <p class="blog-card-excerpt">Introduction Italian desserts are more than just sweet treats; they are a celebration of Italy’s rich culinary heritage and cultural significance. From…</p>
     </a>
-    <a class="blog-card" href="seasonal-sensations-fresh-italian-flavors-you-must-try-this-summer/">
+    <a class="blog-card" href="seasonal-sensations-fresh-italian-flavors-you-must-try-this-summer/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Seasonal Sensations: Fresh Italian Flavors You Must Try This Summer”</h2>
       <p class="blog-card-excerpt">Introduction Welcome to the world of seasonal sensations! There’s nothing like indulging in fresh Italian flavors during the summer. This season is all…</p>
     </a>
-    <a class="blog-card" href="sustainability-in-the-kitchen-how-we-source-and-serve-responsibly/">
+    <a class="blog-card" href="sustainability-in-the-kitchen-how-we-source-and-serve-responsibly/" data-tags="singapore-dining,recipes,wine-pairing,desserts,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Sustainability in the Kitchen: How We Source and Serve Responsibly”</h2>
       <p class="blog-card-excerpt">Introduction Ever thought about the environmental impact of your kitchen? Sustainability in the kitchen is all about making choices that are good for you…</p>
     </a>
-    <a class="blog-card" href="wine-and-dine-the-ultimate-guide-to-pairing-italian-wines-with-our-menu/">
+    <a class="blog-card" href="wine-and-dine-the-ultimate-guide-to-pairing-italian-wines-with-our-menu/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Wine and Dine: The Ultimate Guide to Pairing Italian Wines with Our Menu”</h2>
       <p class="blog-card-excerpt">Introduction Welcome to the world of Wine and Dine, where pairing Italian wines with mouth-watering dishes takes your dining experience to a whole new…</p>
     </a>
-    <a class="blog-card" href="from-rome-to-singapore-discover-the-best-italian-fusion-dishes-in-town/">
+    <a class="blog-card" href="from-rome-to-singapore-discover-the-best-italian-fusion-dishes-in-town/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,pizza,culinary-history,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“From Rome to Singapore: Discover the Best Italian Fusion Dishes in Town”</h2>
       <p class="blog-card-excerpt">Introduction Italian fusion dishes are like the culinary equivalent of a world tour with a sprinkle of mozzarella on top! Imagine taking the rich,…</p>
     </a>
-    <a class="blog-card" href="behind-the-scenes-a-day-in-the-life-of-our-italian-restaurant/">
+    <a class="blog-card" href="behind-the-scenes-a-day-in-the-life-of-our-italian-restaurant/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,sustainability">
       <div class="blog-card-date">July 14, 2024</div>
       <h2 class="blog-card-title">“Behind the Scenes: A Day in the Life of Our Italian Restaurant”</h2>
       <p class="blog-card-excerpt">Introduction Welcome to a culinary adventure at Scampo, a renowned Italian restaurant nestled in the heart of Boston. Known for its exceptional dining…</p>
     </a>
-    <a class="blog-card" href="gluten-free-pasta-options-in-italian-cooking/">
+    <a class="blog-card" href="gluten-free-pasta-options-in-italian-cooking/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,pizza">
       <div class="blog-card-date">July 13, 2024</div>
       <h2 class="blog-card-title">Gluten-Free Pasta Options in Italian Cooking</h2>
       <p class="blog-card-excerpt">Introduction Are you unable to enjoy pasta because of gluten restrictions? You’re not alone. Gluten-free diets are crucial for individuals with Celiac…</p>
     </a>
-    <a class="blog-card" href="authentic-sicilian-cannoli-recipe-with-ricotta-filling/">
+    <a class="blog-card" href="authentic-sicilian-cannoli-recipe-with-ricotta-filling/" data-tags="pasta,recipes,wine-pairing,desserts,culinary-history">
       <div class="blog-card-date">July 13, 2024</div>
       <h2 class="blog-card-title">Authentic Sicilian Cannoli Recipe with Ricotta Filling</h2>
       <p class="blog-card-excerpt">Introduction Have you ever tried making an Authentic Sicilian Cannoli Recipe with Ricotta Filling? If not, you’re in for a treat! Cannoli is an iconic…</p>
     </a>
-    <a class="blog-card" href="how-to-prepare-saltimbocca-alla-romana/">
+    <a class="blog-card" href="how-to-prepare-saltimbocca-alla-romana/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,culinary-history">
       <div class="blog-card-date">July 13, 2024</div>
       <h2 class="blog-card-title">How to Prepare Saltimbocca alla Romana</h2>
       <p class="blog-card-excerpt">Introduction Saltimbocca alla Romana is a culinary masterpiece from Rome that combines tender veal, savory prosciutto, and aromatic sage leaves in a way…</p>
     </a>
-    <a class="blog-card" href="why-was-pasta-almost-banned-in-italy/">
+    <a class="blog-card" href="why-was-pasta-almost-banned-in-italy/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza,culinary-history">
       <div class="blog-card-date">July 6, 2024</div>
       <h2 class="blog-card-title">Why was Pasta almost Banned in Italy?</h2>
       <p class="blog-card-excerpt">Pasta, a staple of Italian cuisine, is beloved worldwide for its versatility, flavor, and simplicity. It’s hard to imagine Italian culture without its…</p>
     </a>
-    <a class="blog-card" href="what-italian-restaurants-are-open-near-me/">
+    <a class="blog-card" href="what-italian-restaurants-are-open-near-me/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">July 6, 2024</div>
       <h2 class="blog-card-title">What Italian Restaurants Are Open Near Me?</h2>
       <p class="blog-card-excerpt">Italian cuisine holds a special place in the hearts of food lovers around the world, including in Singapore, where the culinary landscape is rich with…</p>
     </a>
-    <a class="blog-card" href="where-is-the-best-italian-restaurant-featuring-bacino-italian-restaurant-in-the-east/">
+    <a class="blog-card" href="where-is-the-best-italian-restaurant-featuring-bacino-italian-restaurant-in-the-east/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">July 6, 2024</div>
       <h2 class="blog-card-title">Where is the Best Italian Restaurant? Featuring Bacino Italian Restaurant in the West</h2>
       <p class="blog-card-excerpt">Italian cuisine, known for its rich flavors and diverse dishes, has found a special place in the hearts of food lovers around the world. From classic…</p>
     </a>
-    <a class="blog-card" href="what-olive-oil-do-italian-restaurants-use/">
+    <a class="blog-card" href="what-olive-oil-do-italian-restaurants-use/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,sustainability">
       <div class="blog-card-date">July 6, 2024</div>
       <h2 class="blog-card-title">What Olive Oil Do Italian Restaurants Use?</h2>
       <p class="blog-card-excerpt">Olive oil is a cornerstone of Italian cuisine, cherished for its rich flavor and health benefits. Its quality and characteristics can significantly…</p>
     </a>
-    <a class="blog-card" href="do-italian-restaurants-do-takeaway-in-singapore/">
+    <a class="blog-card" href="do-italian-restaurants-do-takeaway-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,desserts,pizza">
       <div class="blog-card-date">July 6, 2024</div>
       <h2 class="blog-card-title">Do Italian Restaurants Do Takeaway in Singapore?</h2>
       <p class="blog-card-excerpt">Singapore, renowned for its diverse culinary scene, is home to a myriad of international cuisines, including Italian. As the city-state’s food culture…</p>
     </a>
-    <a class="blog-card" href="do-italian-restaurants-expect-a-tip/">
+    <a class="blog-card" href="do-italian-restaurants-expect-a-tip/" data-tags="italian-cuisine,singapore-dining,wine-pairing,chef-spotlight">
       <div class="blog-card-date">July 6, 2024</div>
       <h2 class="blog-card-title">Do Italian Restaurants Expect a Tip?</h2>
       <p class="blog-card-excerpt">When dining out in Italy, one might wonder about the tipping etiquette in restaurants. In many countries, tipping is a customary practice to show…</p>
     </a>
-    <a class="blog-card" href="solo-dining-in-singapore-a-spotlight-on-bacino-italian-bistro-and-other-single-friendly-italian-restaurants/">
+    <a class="blog-card" href="solo-dining-in-singapore-a-spotlight-on-bacino-italian-bistro-and-other-single-friendly-italian-restaurants/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza">
       <div class="blog-card-date">June 30, 2024</div>
       <h2 class="blog-card-title">Solo Dining in Singapore: A Spotlight on Bacino Italian Bistro and Other Single-Friendly Italian Restaurants</h2>
       <p class="blog-card-excerpt">Dining solo can be a rewarding experience, offering a moment of tranquility and personal indulgence. In Singapore, a city known for its vibrant food…</p>
     </a>
-    <a class="blog-card" href="organizing-a-team-building-event-at-an-italian-restaurant-a-culinary-experience-at-bacino-italian-bistro/">
+    <a class="blog-card" href="organizing-a-team-building-event-at-an-italian-restaurant-a-culinary-experience-at-bacino-italian-bistro/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza,culinary-history">
       <div class="blog-card-date">June 30, 2024</div>
       <h2 class="blog-card-title">Organizing a Team Building Event at an Italian Restaurant: A Culinary Experience at Bacino Italian Bistro</h2>
       <p class="blog-card-excerpt">Team building activities are essential for fostering a cohesive, productive, and motivated workforce. In the unique setting of an Italian restaurant like…</p>
     </a>
-    <a class="blog-card" href="the-most-famous-italian-chefs-in-the-world-culinary-maestros-of-italian-cuisine/">
+    <a class="blog-card" href="the-most-famous-italian-chefs-in-the-world-culinary-maestros-of-italian-cuisine/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,culinary-history">
       <div class="blog-card-date">June 30, 2024</div>
       <h2 class="blog-card-title">The Most Famous Italian Chefs in the World: Culinary Maestros of Italian Cuisine</h2>
       <p class="blog-card-excerpt">Italian cuisine, renowned for its simplicity and rich flavors, has captured the hearts and palates of people worldwide. Behind this beloved culinary…</p>
     </a>
-    <a class="blog-card" href="exploring-the-best-italian-restaurants-in-singapore-2024-a-culinary-journey/">
+    <a class="blog-card" href="exploring-the-best-italian-restaurants-in-singapore-2024-a-culinary-journey/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,culinary-history">
       <div class="blog-card-date">June 30, 2024</div>
       <h2 class="blog-card-title">Exploring the Best Italian Restaurants in Singapore 2024: A Culinary Journey</h2>
       <p class="blog-card-excerpt">In the bustling culinary scene of Singapore, Italian cuisine holds a special place, offering a delightful blend of tradition, flavor, and innovation. In…</p>
     </a>
-    <a class="blog-card" href="the-fascinating-history-of-tiramisu-from-origins-to-culinary-treasure/">
+    <a class="blog-card" href="the-fascinating-history-of-tiramisu-from-origins-to-culinary-treasure/" data-tags="italian-cuisine,singapore-dining,recipes,wine-pairing,chef-spotlight,desserts,pizza,culinary-history">
       <div class="blog-card-date">May 12, 2024</div>
       <h2 class="blog-card-title">The Fascinating History of Tiramisu: From Origins to Culinary Treasure</h2>
       <p class="blog-card-excerpt">The History of Tiramisu Tiramisu, the beloved Italian dessert, has a fascinating history that is as rich and layered as the dessert itself. While its…</p>
     </a>
-    <a class="blog-card" href="italian-cuisine-a-rich-tapestry-of-flavors-and-global-influence/">
+    <a class="blog-card" href="italian-cuisine-a-rich-tapestry-of-flavors-and-global-influence/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,culinary-history">
       <div class="blog-card-date">May 12, 2024</div>
       <h2 class="blog-card-title">Italian Cuisine: A Rich Tapestry of Flavors and Global Influence</h2>
       <p class="blog-card-excerpt">Italian Cuisine: A Rich and Diverse Gastronomic Tradition Italian cuisine is a Mediterranean culinary tradition that has evolved over centuries,…</p>
     </a>
-    <a class="blog-card" href="top-italian-restaurants-in-singapore-dive-into-la-dolce-vita/">
+    <a class="blog-card" href="top-italian-restaurants-in-singapore-dive-into-la-dolce-vita/" data-tags="italian-cuisine,singapore-dining,pasta,pizza,culinary-history">
       <div class="blog-card-date">May 12, 2024</div>
       <h2 class="blog-card-title">Top Italian Restaurants in Singapore: Dive into La Dolce Vita!</h2>
       <p class="blog-card-excerpt">Top Italian Restaurants in Singapore: Dive into La Dolce Vita! Embark on a culinary journey to Italy right here in Singapore! Indulge in authentic Italian…</p>
     </a>
-    <a class="blog-card" href="exploring-the-world-of-pizza-from-italian-classics-to-the-strangest-varieties/">
+    <a class="blog-card" href="exploring-the-world-of-pizza-from-italian-classics-to-the-strangest-varieties/" data-tags="italian-cuisine,singapore-dining,desserts,pizza,culinary-history,sustainability">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">Exploring the World of Pizza: From Italian Classics to the Strangest Varieties</h2>
       <p class="blog-card-excerpt">Exploring the World of Pizza: From Italian Classics to the Strangest Varieties Pizza, a beloved dish originating from Italy, has become a global…</p>
     </a>
-    <a class="blog-card" href="embark-on-a-culinary-adventure-exploring-the-best-italian-dishes/">
+    <a class="blog-card" href="embark-on-a-culinary-adventure-exploring-the-best-italian-dishes/" data-tags="italian-cuisine,singapore-dining,pasta,pizza">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">Embark on a Culinary Adventure: Exploring the Best Italian Dishes</h2>
       <p class="blog-card-excerpt">The Best Italian Dishes: A Culinary Journey Italy is renowned for its rich culinary traditions that have captivated taste buds around the world. From the…</p>
     </a>
-    <a class="blog-card" href="bacino-italian-bistro-a-taste-of-italy-in-the-heart-of-singapore/">
+    <a class="blog-card" href="bacino-italian-bistro-a-taste-of-italy-in-the-heart-of-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,chef-spotlight,pizza,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">Bacino Italian Bistro: A Taste of Italy in the Heart of Singapore</h2>
       <p class="blog-card-excerpt">Singapore: A Fusion of Cultures and Cuisines Singapore, a vibrant city-state in Southeast Asia, is renowned for its rich cultural heritage and diverse…</p>
     </a>
-    <a class="blog-card" href="the-origins-and-meanings-of-the-italian-word-bacino/">
+    <a class="blog-card" href="the-origins-and-meanings-of-the-italian-word-bacino/" data-tags="italian-cuisine,singapore-dining,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">The Origins and Meanings of the Italian Word “Bacino”</h2>
       <p class="blog-card-excerpt">The Origins of the Word “Bacino” in Italian Language is a fascinating aspect of human culture, and tracing the origins of words can provide us with…</p>
     </a>
-    <a class="blog-card" href="the-most-fascinating-and-unique-restaurants-in-italy/">
+    <a class="blog-card" href="the-most-fascinating-and-unique-restaurants-in-italy/" data-tags="italian-cuisine,singapore-dining,pasta,chef-spotlight,pizza,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">The Most Fascinating and Unique Restaurants in Italy</h2>
       <p class="blog-card-excerpt">The Most Fascinating and Unique Restaurants in Italy Italy is known for its rich culinary traditions and world-renowned cuisine. From pasta and pizza to…</p>
     </a>
-    <a class="blog-card" href="the-rich-history-and-delicious-main-dishes-of-italian-cuisine/">
+    <a class="blog-card" href="the-rich-history-and-delicious-main-dishes-of-italian-cuisine/" data-tags="italian-cuisine,pasta,recipes,wine-pairing,chef-spotlight,pizza,culinary-history,sustainability">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">The Rich History and Delicious Main Dishes of Italian Cuisine</h2>
       <p class="blog-card-excerpt">The Rich History and Delicious Main Dishes of Italian Cuisine Italian cuisine is renowned worldwide for its rich flavors, fresh ingredients, and…</p>
     </a>
-    <a class="blog-card" href="exploring-the-culinary-treasures-of-parma/">
+    <a class="blog-card" href="exploring-the-culinary-treasures-of-parma/" data-tags="italian-cuisine,singapore-dining,pasta,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">Exploring the Culinary Treasures of Parma</h2>
       <p class="blog-card-excerpt">Discovering the Culinary Delights of Parma Parma, a picturesque city in the Emilia-Romagna region of Italy, is not only known for its rich history and…</p>
     </a>
-    <a class="blog-card" href="the-culinary-delights-of-bologna-a-journey-through-history-and-flavor/">
+    <a class="blog-card" href="the-culinary-delights-of-bologna-a-journey-through-history-and-flavor/" data-tags="italian-cuisine,pasta,recipes,wine-pairing,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">The Culinary Delights of Bologna: A Journey Through History and Flavor</h2>
       <p class="blog-card-excerpt">The Culinary Delights of Bologna: A Journey Through History and Flavor Bologna, the capital and largest city of the Emilia-Romagna region in northern…</p>
     </a>
-    <a class="blog-card" href="discover-the-culinary-delights-of-milan/">
+    <a class="blog-card" href="discover-the-culinary-delights-of-milan/" data-tags="italian-cuisine,singapore-dining,pasta,wine-pairing,desserts,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">Discover the Culinary Delights of Milan</h2>
       <p class="blog-card-excerpt">Discover the Culinary Delights of Milan Milan, the fashion capital of Italy, is not only known for its stylish designs and iconic landmarks but also for…</p>
     </a>
-    <a class="blog-card" href="exploring-the-rich-food-history-of-florence/">
+    <a class="blog-card" href="exploring-the-rich-food-history-of-florence/" data-tags="singapore-dining,pasta,wine-pairing,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">Exploring the Rich Food History of Florence</h2>
       <p class="blog-card-excerpt">The Rich Food History of Florence Florence, the capital city of Tuscany in Italy, is not only known for its stunning architecture and art, but also for…</p>
     </a>
-    <a class="blog-card" href="the-rich-culinary-history-of-venice/">
+    <a class="blog-card" href="the-rich-culinary-history-of-venice/" data-tags="desserts,culinary-history">
       <div class="blog-card-date">March 16, 2024</div>
       <h2 class="blog-card-title">The Rich Culinary History of Venice</h2>
       <p class="blog-card-excerpt">The Rich Culinary History of Venice Venice, the enchanting city of canals and gondolas, is not only famous for its stunning architecture and romantic…</p>
     </a>
-    <a class="blog-card" href="the-delicious-cuisine-of-napoli-italy/">
+    <a class="blog-card" href="the-delicious-cuisine-of-napoli-italy/" data-tags="singapore-dining,pasta,desserts,pizza,culinary-history">
       <div class="blog-card-date">March 15, 2024</div>
       <h2 class="blog-card-title">The Delicious Cuisine of Napoli, Italy</h2>
       <p class="blog-card-excerpt">The Delicious Cuisine of Napoli, Italy When it comes to Italian food, Napoli is a city that stands out for its rich culinary heritage. Located in the…</p>
     </a>
-    <a class="blog-card" href="the-culinary-delights-of-rome/">
+    <a class="blog-card" href="the-culinary-delights-of-rome/" data-tags="singapore-dining,pasta,recipes,wine-pairing,pizza,culinary-history">
       <div class="blog-card-date">March 15, 2024</div>
       <h2 class="blog-card-title">The Culinary Delights of Rome</h2>
       <p class="blog-card-excerpt">The Culinary Delights of Rome Rome, the eternal city, is not only known for its rich history and stunning architecture but also for its delectable…</p>
     </a>
-    <a class="blog-card" href="the-importance-of-understanding-and-managing-supply-chain-risks/">
+    <a class="blog-card" href="the-importance-of-understanding-and-managing-supply-chain-risks/" data-tags="singapore-dining,sustainability">
       <div class="blog-card-date">March 15, 2024</div>
       <h2 class="blog-card-title">The Importance of Understanding and Managing Supply Chain Risks</h2>
       <p class="blog-card-excerpt">Understanding Supply Chain Risk Management Supply chain risk management is a crucial aspect of any business that relies on a complex network of suppliers,…</p>
     </a>
-    <a class="blog-card" href="why-fresh-ingredients-matter-in-italian-cooking-insights-from-our-singapore-kitchen-2/">
+    <a class="blog-card" href="why-fresh-ingredients-matter-in-italian-cooking-insights-from-our-singapore-kitchen-2/" data-tags="italian-cuisine,singapore-dining,pasta,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Why Fresh Ingredients Matter in Italian Cooking: Insights from Our Singapore Kitchen</h2>
       <p class="blog-card-excerpt">Italian cuisine is renowned for its simplicity and emphasis on quality ingredients. From the rich flavors of pasta dishes to the vibrant freshness of…</p>
     </a>
-    <a class="blog-card" href="celebrating-italian-festivals-in-singapore-a-culinary-journey-at-our-restaurant/">
+    <a class="blog-card" href="celebrating-italian-festivals-in-singapore-a-culinary-journey-at-our-restaurant/" data-tags="italian-cuisine,singapore-dining,wine-pairing,chef-spotlight,desserts">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Celebrating Italian Festivals in Singapore: A Culinary Journey at Our Restaurant</h2>
       <p class="blog-card-excerpt">Singapore is a melting pot of cultures, offering a diverse culinary scene that caters to all tastes. At our restaurant, we pride ourselves on bringing the…</p>
     </a>
-    <a class="blog-card" href="why-fresh-ingredients-matter-in-italian-cooking-insights-from-our-singapore-kitchen/">
+    <a class="blog-card" href="why-fresh-ingredients-matter-in-italian-cooking-insights-from-our-singapore-kitchen/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Why Fresh Ingredients Matter in Italian Cooking: Insights from Our Singapore Kitchen</h2>
       <p class="blog-card-excerpt">When it comes to Italian cuisine, there’s one thing that sets it apart from other culinary traditions – the emphasis on fresh ingredients. At our…</p>
     </a>
-    <a class="blog-card" href="the-ultimate-guide-to-italian-desserts-in-singapore/">
+    <a class="blog-card" href="the-ultimate-guide-to-italian-desserts-in-singapore/" data-tags="italian-cuisine,singapore-dining,wine-pairing,chef-spotlight,desserts,culinary-history,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">The Ultimate Guide to Italian Desserts in Singapore</h2>
       <p class="blog-card-excerpt">Indulge in the Sweetness of Italian Desserts When it comes to satisfying your sweet tooth, Italian desserts are in a league of their own. From creamy…</p>
     </a>
-    <a class="blog-card" href="behind-the-scenes-a-day-in-the-life-of-our-italian-chef-in-singapore/">
+    <a class="blog-card" href="behind-the-scenes-a-day-in-the-life-of-our-italian-chef-in-singapore/" data-tags="italian-cuisine,singapore-dining,wine-pairing,chef-spotlight,desserts,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Behind the Scenes: A Day in the Life of Our Italian Chef in Singapore</h2>
       <p class="blog-card-excerpt">Introduction Welcome to our blog post where we take you behind the scenes and give you a glimpse into the daily life of our talented Italian chef here in…</p>
     </a>
-    <a class="blog-card" href="sustainable-dining-how-our-italian-restaurant-in-singapore-supports-local-farms/">
+    <a class="blog-card" href="sustainable-dining-how-our-italian-restaurant-in-singapore-supports-local-farms/" data-tags="italian-cuisine,singapore-dining,wine-pairing,chef-spotlight,desserts,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Sustainable Dining: How Our Italian Restaurant in Singapore Supports Local Farms</h2>
       <p class="blog-card-excerpt">Introduction Welcome to our Italian restaurant in Singapore, where we take great pride in our commitment to sustainability. One of the ways we demonstrate…</p>
     </a>
-    <a class="blog-card" href="the-art-of-italian-wine-pairing-tips-from-our-singaporean-sommelier/">
+    <a class="blog-card" href="the-art-of-italian-wine-pairing-tips-from-our-singaporean-sommelier/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">The Art of Italian Wine Pairing: Tips from Our “Singaporean” Sommelier</h2>
       <p class="blog-card-excerpt">Are you a wine enthusiast who loves indulging in the rich flavors of Italian cuisine? If so, you’re in for a treat! We’ve got some expert advice from our…</p>
     </a>
-    <a class="blog-card" href="from-italy-to-singapore-the-journey-of-italian-cuisine/">
+    <a class="blog-card" href="from-italy-to-singapore-the-journey-of-italian-cuisine/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,desserts,pizza,culinary-history,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">From Italy to Singapore: The Journey of Italian Cuisine</h2>
       <p class="blog-card-excerpt">Italian cuisine is renowned worldwide for its rich flavors, fresh ingredients, and time-honored cooking techniques. From the rolling hills of Tuscany to…</p>
     </a>
-    <a class="blog-card" href="unveiling-the-essence-of-authentic-italian-food-a-gastronomic-journey/">
+    <a class="blog-card" href="unveiling-the-essence-of-authentic-italian-food-a-gastronomic-journey/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,desserts,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Unveiling the Essence of Authentic Italian Food: A Gastronomic Journey</h2>
       <p class="blog-card-excerpt">Italy, a country renowned for its rich cultural heritage, picturesque landscapes, and passionate people, is also celebrated for its culinary delights.…</p>
     </a>
-    <a class="blog-card" href="a-sweet-journey-through-italy-indulge-in-the-most-popular-desserts/">
+    <a class="blog-card" href="a-sweet-journey-through-italy-indulge-in-the-most-popular-desserts/" data-tags="italian-cuisine,singapore-dining,pasta,desserts,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">A Sweet Journey Through Italy: Indulge in the Most Popular Desserts</h2>
       <p class="blog-card-excerpt">Italy, the land of art, history, and of course, mouthwatering cuisine. When it comes to desserts, Italians have truly mastered the art of satisfying our…</p>
     </a>
-    <a class="blog-card" href="a-delightful-journey-to-mastering-the-art-of-panna-cotta/">
+    <a class="blog-card" href="a-delightful-journey-to-mastering-the-art-of-panna-cotta/" data-tags="italian-cuisine,singapore-dining,pasta,desserts">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">A Delightful Journey to Mastering the Art of Panna Cotta</h2>
       <p class="blog-card-excerpt">Introduction Welcome, fellow dessert enthusiasts, to a delightful journey into the heart of Italian cuisine! Today, we embark on a quest to master the art…</p>
     </a>
-    <a class="blog-card" href="a-captivating-journey-to-venice-a-must-visit-destination-for-singaporeans/">
+    <a class="blog-card" href="a-captivating-journey-to-venice-a-must-visit-destination-for-singaporeans/" data-tags="italian-cuisine,singapore-dining,pasta,desserts,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">A Captivating Journey to Venice: A Must-Visit Destination for Singaporeans</h2>
       <p class="blog-card-excerpt">Imagine a city where the streets are made of water, where gondolas glide gracefully through narrow canals, and where history and beauty intertwine at…</p>
     </a>
-    <a class="blog-card" href="master-the-art-of-cooking-amazing-italian-pasta-in-singapore/">
+    <a class="blog-card" href="master-the-art-of-cooking-amazing-italian-pasta-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,wine-pairing,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Master the Art of Cooking Amazing Italian Pasta in Singapore</h2>
       <p class="blog-card-excerpt">Are you craving a delicious plate of authentic Italian pasta but don’t know where to start? Look no further! In this guide, we will take you on a culinary…</p>
     </a>
-    <a class="blog-card" href="the-ultimate-guide-to-cooking-a-mouthwatering-lasagna-in-singapore/">
+    <a class="blog-card" href="the-ultimate-guide-to-cooking-a-mouthwatering-lasagna-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,chef-spotlight,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">The Ultimate Guide to Cooking a Mouthwatering Lasagna in Singapore</h2>
       <p class="blog-card-excerpt">Are you ready to embark on a culinary adventure and create a delectable lasagna that will impress even the most discerning palates? Look no further! In…</p>
     </a>
-    <a class="blog-card" href="a-taste-of-italy-in-singapore-exploring-the-rich-history-of-italian-cuisine/">
+    <a class="blog-card" href="a-taste-of-italy-in-singapore-exploring-the-rich-history-of-italian-cuisine/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">A Taste of Italy in Singapore: Exploring the Rich History of Italian Cuisine</h2>
       <p class="blog-card-excerpt">Italian food has long been celebrated for its rich flavors, fresh ingredients, and exquisite simplicity. From the humble beginnings of traditional recipes…</p>
     </a>
-    <a class="blog-card" href="exploring-the-culinary-delights-of-singapore-a-foodies-guide/">
+    <a class="blog-card" href="exploring-the-culinary-delights-of-singapore-a-foodies-guide/" data-tags="italian-cuisine,singapore-dining,pasta,wine-pairing,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Exploring the Culinary Delights of Singapore: A Foodie’s Guide</h2>
       <p class="blog-card-excerpt">When it comes to a melting pot of diverse cultures and flavors, Singapore takes the cake. From street food stalls to Michelin-starred restaurants, this…</p>
     </a>
-    <a class="blog-card" href="where-to-satisfy-your-cravings-for-authentic-italian-food-in-singapore/">
+    <a class="blog-card" href="where-to-satisfy-your-cravings-for-authentic-italian-food-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,wine-pairing,desserts,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Where to Satisfy Your Cravings for Authentic Italian Food in Singapore</h2>
       <p class="blog-card-excerpt">Are you an expat in Singapore with a hankering for delicious Italian cuisine? Look no further! In this guide, we’ll take you on a culinary journey to…</p>
     </a>
-    <a class="blog-card" href="how-to-choose-a-good-restaurant-and-is-it-worth-paying-more-for-quality-food-in-singapore/">
+    <a class="blog-card" href="how-to-choose-a-good-restaurant-and-is-it-worth-paying-more-for-quality-food-in-singapore/" data-tags="singapore-dining,chef-spotlight,pizza,culinary-history,sustainability">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">How to Choose a Good Restaurant and Is It Worth Paying More for Quality Food in Singapore?</h2>
       <p class="blog-card-excerpt">When it comes to dining out in Singapore, the options are endless. The city-state is renowned for its vibrant food scene, offering a plethora of cuisines…</p>
     </a>
-    <a class="blog-card" href="italian-restaurants-in-singapore-and-the-expat-crowd/">
+    <a class="blog-card" href="italian-restaurants-in-singapore-and-the-expat-crowd/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Italian Restaurants in Singapore and the Expat Crowd</h2>
       <p class="blog-card-excerpt">When it comes to dining out, Singapore offers a diverse culinary scene that caters to all tastes and preferences. One cuisine that has gained immense…</p>
     </a>
-    <a class="blog-card" href="the-deliciously-creamy-history-of-burrata/">
+    <a class="blog-card" href="the-deliciously-creamy-history-of-burrata/" data-tags="singapore-dining,pasta,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">The Deliciously Creamy History of Burrata</h2>
       <p class="blog-card-excerpt">When it comes to cheese, there are few things as indulgent and delicious as burrata. This Italian cheese is known for its creamy texture and rich flavor,…</p>
     </a>
-    <a class="blog-card" href="the-rich-history-and-irresistible-charm-of-italian-pizza/">
+    <a class="blog-card" href="the-rich-history-and-irresistible-charm-of-italian-pizza/" data-tags="singapore-dining,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">The Rich History and Irresistible Charm of Italian Pizza</h2>
       <p class="blog-card-excerpt">When it comes to beloved culinary delights, few dishes can match the worldwide popularity and mouthwatering appeal of Italian pizza. With its thin, crispy…</p>
     </a>
-    <a class="blog-card" href="optimizing-third-party-risk-management-in-the-food-beverage-industry/">
+    <a class="blog-card" href="optimizing-third-party-risk-management-in-the-food-beverage-industry/" data-tags="singapore-dining,pasta,recipes,pizza,culinary-history">
       <div class="blog-card-date">March 7, 2024</div>
       <h2 class="blog-card-title">Optimizing Third-Party Risk Management in the Food &amp; Beverage Industry</h2>
       <p class="blog-card-excerpt">In the fast-paced Food &amp; Beverage (F&amp;B) industry, managing risks associated with third-party vendors is crucial for maintaining food safety, quality, and…</p>
     </a>
-    <a class="blog-card" href="a-taste-for-italian-flavors-and-cybersecurity-innovations/">
+    <a class="blog-card" href="a-taste-for-italian-flavors-and-cybersecurity-innovations/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,pizza,culinary-history">
       <div class="blog-card-date">March 3, 2024</div>
       <h2 class="blog-card-title">A Taste for Italian Flavors and Cybersecurity Innovations</h2>
       <p class="blog-card-excerpt">Nestled in the heart of Singapore’s bustling dining scene, Bacino Italian Bistro stands out as a haven for authentic Italian cuisine. It’s here that we…</p>
     </a>
-    <a class="blog-card" href="how-to-choose-the-best-italian-restaurant-in-singapore/">
+    <a class="blog-card" href="how-to-choose-the-best-italian-restaurant-in-singapore/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,sustainability">
       <div class="blog-card-date">May 3, 2021</div>
       <h2 class="blog-card-title">How to choose the best Italian restaurant in Singapore ?</h2>
       <p class="blog-card-excerpt">Singapore, a melting pot of cultures and cuisines, offers an array of dining experiences that cater to every palate. Among these, Italian cuisine stands…</p>
     </a>
-    <a class="blog-card" href="the-secrets-behind-authentic-italian-pasta-techniques-and-recipes/">
+    <a class="blog-card" href="the-secrets-behind-authentic-italian-pasta-techniques-and-recipes/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,sustainability">
       <div class="blog-card-date">May 3, 2021</div>
       <h2 class="blog-card-title">The Secrets Behind Authentic Italian Pasta: Techniques and Recipes</h2>
       <p class="blog-card-excerpt">Welcome to the heart of Italian cuisine! If you’re a pasta aficionado or just beginning your culinary journey, understanding the essence of authentic…</p>
     </a>
-    <a class="blog-card" href="a-guide-to-italian-wine-pairing-the-perfect-wine-with-your-meal/">
+    <a class="blog-card" href="a-guide-to-italian-wine-pairing-the-perfect-wine-with-your-meal/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,desserts,pizza,sustainability">
       <div class="blog-card-date">May 2, 2021</div>
       <h2 class="blog-card-title">A Guide to Italian Wine: Pairing the Perfect Wine with Your Meal</h2>
       <p class="blog-card-excerpt">Italy is not just a country; it’s a symphony of flavors, a canvas painted with the hues of its diverse landscapes, and a story told through its culinary…</p>
     </a>
-    <a class="blog-card" href="sustainable-eating-with-italian-cuisine-farm-to-table-trends-in-italy/">
+    <a class="blog-card" href="sustainable-eating-with-italian-cuisine-farm-to-table-trends-in-italy/" data-tags="italian-cuisine,singapore-dining,pasta,recipes,wine-pairing,chef-spotlight,sustainability">
       <div class="blog-card-date">May 2, 2021</div>
       <h2 class="blog-card-title">Sustainable Eating with Italian Cuisine: Farm-to-Table Trends in Italy</h2>
       <p class="blog-card-excerpt">In recent years, the spotlight has turned to sustainable eating, a movement that emphasizes environmental stewardship, ethical food production, and the…</p>
@@ -655,6 +674,31 @@
   </div>
   <div class="footer-copyright">© 2026 Bacino Italian Bistro · Pasir Panjang, Singapore</div>
 </footer>
+
+<script>
+(function () {
+  var activeTag = null;
+  var pills = document.querySelectorAll('.blog-tag-pill');
+  var cards = document.querySelectorAll('.blog-card');
+  pills.forEach(function (pill) {
+    pill.addEventListener('click', function () {
+      var tag = pill.getAttribute('data-tag');
+      if (activeTag === tag) {
+        activeTag = null;
+        pills.forEach(function (p) { p.classList.remove('is-active'); });
+        cards.forEach(function (c) { c.classList.remove('is-hidden'); });
+        return;
+      }
+      activeTag = tag;
+      pills.forEach(function (p) { p.classList.toggle('is-active', p === pill); });
+      cards.forEach(function (c) {
+        var cardTags = (c.getAttribute('data-tags') || '').split(',');
+        c.classList.toggle('is-hidden', cardTags.indexOf(tag) === -1);
+      });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
