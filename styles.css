@@ -622,3 +622,8 @@ br.mobile-break { display: none; }
 .blog-post-body li { font-size: 17px; line-height: 1.7; color: var(--text-brown); margin-bottom: 8px; }
 .blog-post-cta { margin-top: 44px; padding-top: 36px; border-top: 1px solid rgba(42, 32, 25, 0.12); text-align: center; }
 .blog-post-cta p { margin: 0 0 20px; }
+.blog-related { margin-top: 44px; padding-top: 36px; border-top: 1px solid rgba(42, 32, 25, 0.12); }
+.blog-related-title { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--olive); margin: 0 0 18px; }
+.blog-related-list { display: flex; flex-direction: column; gap: 16px; }
+.blog-related-link { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+.blog-related-link:hover { color: var(--olive); }
