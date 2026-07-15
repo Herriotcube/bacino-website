@@ -638,7 +638,7 @@ br.mobile-break { display: none; }
 .blog-back-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; color: var(--olive); margin-bottom: 28px; }
 .blog-post-date { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--olive); margin-bottom: 14px; }
 .blog-post-section h1 { font-size: clamp(30px, 4vw, 46px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 32px; }
-.blog-post-body h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.01em; margin: 40px 0 16px; }
+.blog-post-body h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.01em; margin: 40px 0 16px; color: #a3291f; }
 .blog-post-body p { font-size: 17px; line-height: 1.75; color: var(--text-brown); margin: 0 0 20px; }
 .blog-post-body ul { margin: 0 0 20px; padding-left: 22px; }
 .blog-post-body li { font-size: 17px; line-height: 1.7; color: var(--text-brown); margin-bottom: 8px; }
