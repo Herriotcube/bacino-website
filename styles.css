@@ -724,21 +724,11 @@ br.mobile-break { display: none; }
   align-items: center;
 }
 .club-card-visual { display: flex; justify-content: center; }
-.club-membership-card {
-  width: 340px; max-width: 100%; aspect-ratio: 1.586;
+.club-card-img {
+  width: 480px; max-width: 100%;
   border-radius: 18px;
-  background: linear-gradient(135deg, #2a2019 0%, #4a3a24 55%, #2a2019 100%);
-  border: 1px solid rgba(230, 199, 154, 0.3);
-  box-shadow: 0 24px 50px rgba(20, 12, 6, 0.35);
-  padding: 26px 28px;
-  display: flex; flex-direction: column; justify-content: space-between;
-  color: var(--cream-alt);
-  transform: rotate(-4deg);
+  filter: drop-shadow(0 20px 40px rgba(20, 12, 6, 0.28));
 }
-.club-card-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; letter-spacing: 0.16em; }
-.club-card-brand img { height: 30px; width: 30px; object-fit: contain; }
-.club-card-wordmark { font-family: "Newsreader", serif; font-style: italic; font-size: 28px; color: var(--gold-eyebrow); }
-.club-card-foot { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #ddcfb4; }
 .club-card-copy .eyebrow { color: var(--olive); }
 .club-card-copy h2 { font-size: clamp(28px, 3.2vw, 40px); font-weight: 800; letter-spacing: -0.02em; margin: 0 0 16px; color: var(--ink); }
 .club-card-copy p { font-size: 16.5px; line-height: 1.7; color: var(--text-brown); margin: 0 0 28px; max-width: 46ch; }
