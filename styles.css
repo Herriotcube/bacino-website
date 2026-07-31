@@ -656,7 +656,7 @@ br.mobile-break { display: none; }
 
 .club-hero {
   position: relative;
-  background-image: radial-gradient(120% 140% at 50% 0%, rgba(58, 46, 28, 0.82) 0%, rgba(42, 32, 25, 0.88) 55%, rgba(28, 21, 16, 0.93) 100%), url("../assets/bacino-cheers.jpg");
+  background-image: radial-gradient(120% 140% at 50% 0%, rgba(58, 46, 28, 0.82) 0%, rgba(42, 32, 25, 0.88) 55%, rgba(28, 21, 16, 0.93) 100%), url("../assets/bacino-club-88-family.jpg");
   background-size: cover;
   background-position: center;
   color: var(--cream-alt);
@@ -683,14 +683,15 @@ br.mobile-break { display: none; }
 .club-hero-copy { font-size: 18px; line-height: 1.7; color: #ddcfb4; max-width: 52ch; margin: 0 auto 36px; }
 .club-price-badge {
   display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
-  width: 168px; height: 168px; border-radius: 50%;
-  border: 2px solid var(--gold-eyebrow);
-  background: rgba(230, 199, 154, 0.08);
+  width: 180px; height: 180px; border-radius: 50%;
+  border: 3px solid var(--gold-eyebrow);
+  background: radial-gradient(circle at 50% 38%, rgba(230, 199, 154, 0.32) 0%, rgba(230, 199, 154, 0.1) 70%, rgba(230, 199, 154, 0.04) 100%);
+  box-shadow: 0 0 0 6px rgba(230, 199, 154, 0.1), 0 0 48px rgba(230, 199, 154, 0.4), 0 20px 40px rgba(0, 0, 0, 0.35);
   margin: 0 auto 36px;
 }
-.club-price-badge .amount { font-size: 40px; font-weight: 800; color: var(--gold-eyebrow); letter-spacing: -0.02em; }
-.club-price-badge .period { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ddcfb4; margin-top: 4px; }
-.club-price-badge .label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #a0876a; margin-bottom: 6px; }
+.club-price-badge .amount { font-size: 44px; font-weight: 800; color: var(--gold-eyebrow); letter-spacing: -0.02em; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35); }
+.club-price-badge .period { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #f0e7d6; margin-top: 4px; }
+.club-price-badge .label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #d9c299; margin-bottom: 6px; }
 .club-hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
 
 .club-benefits-section { padding: clamp(56px, 7vw, 100px) clamp(24px, 5vw, 64px); }
@@ -743,7 +744,8 @@ br.mobile-break { display: none; }
 .club-info-label { font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-brown); line-height: 1.5; }
 
 .club-form-section {
-  background: var(--ink);
+  background: linear-gradient(90deg, rgba(24, 17, 11, 0.82) 0%, rgba(24, 17, 11, 0.7) 50%, rgba(24, 17, 11, 0.82) 100%),
+              linear-gradient(90deg, #1f7a4d 0 33.33%, #efe9dc 33.33% 66.66%, #b23a2e 66.66% 100%);
   padding: clamp(56px, 7vw, 96px) clamp(24px, 5vw, 64px);
 }
 .club-form-header { text-align: center; max-width: 620px; margin: 0 auto clamp(36px, 4vw, 48px); }
@@ -778,13 +780,15 @@ br.mobile-break { display: none; }
   border-color: var(--olive);
   box-shadow: 0 0 0 3px rgba(108, 114, 69, 0.18);
 }
-.club-form-field input:invalid:not(:placeholder-shown) { border-color: #b23a2e; }
+.club-form-field input.touched:invalid { border-color: #b23a2e; }
 .club-form-submit { width: 100%; justify-content: center; margin-top: 8px; font-size: 17px; }
 .club-form-note { font-size: 12.5px; color: var(--text-faint); text-align: center; margin: 16px 0 0; }
 .club-form-honeypot { position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; pointer-events: none; }
-
-.club-fineprint-section { padding: 0 clamp(24px, 5vw, 64px) clamp(48px, 5vw, 72px); }
-.club-fineprint { max-width: 720px; margin: 0 auto; font-size: 12.5px; line-height: 1.8; color: var(--text-faint); text-align: center; }
+.club-fineprint {
+  font-size: 12px; line-height: 1.7; color: var(--text-faint); text-align: center;
+  margin: 14px 0 0; padding-top: 14px;
+  border-top: 1px solid rgba(42, 32, 25, 0.12);
+}
 
 @media (max-width: 900px) {
   .club-benefits-grid { grid-template-columns: 1fr 1fr; }

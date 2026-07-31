@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="../styles.css?v=18">
+<link rel="stylesheet" href="../styles.css?v=20">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -212,12 +212,8 @@
       <i class="fa-solid fa-star"></i>Join Bacino Club 88
     </button>
     <p class="club-form-note">By joining, you agree to be contacted by Bacino Italian Bistro about your membership.</p>
+    <p class="club-fineprint">Terms &amp; conditions apply. Valid for 12 months from date of purchase. Dine-in only. Not valid with other promotions. Management reserves the right to amend the programme terms.</p>
   </form>
-</section>
-
-<!-- ===== FINE PRINT ===== -->
-<section class="club-fineprint-section">
-  <p class="club-fineprint">Terms &amp; conditions apply. Valid for 12 months from date of purchase. Dine-in only. Not valid with other promotions. Management reserves the right to amend the programme terms.</p>
 </section>
 
 <!-- ===== FOOTER ===== -->
@@ -250,6 +246,10 @@
   var form = document.getElementById('club88-form');
   var email = document.getElementById('email');
   var confirmEmail = document.getElementById('confirmEmail');
+
+  form.querySelectorAll('input, select').forEach(function (field) {
+    field.addEventListener('blur', function () { field.classList.add('touched'); });
+  });
 
   function checkEmailsMatch() {
     if (confirmEmail.value && confirmEmail.value !== email.value) {
