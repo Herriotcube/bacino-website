@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="../../styles.css?v=29">
+<link rel="stylesheet" href="../../styles.css?v=30">
 <link rel="icon" href="../../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
@@ -38,7 +38,11 @@
     <img src="../../assets/bacino-logo-small.png" alt="Bacino wax seal" class="nav-logo" width="48" height="48">
     BACINO
   </a>
-  <div class="nav-links">
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <button type="button" class="nav-drawer-close" id="navClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
     <a href="../../#story" class="nav-link">Our Story</a>
     <a href="../../#menu" class="nav-link">Menus</a>
     <a href="../../#reviews" class="nav-link">Reviews</a>
@@ -50,6 +54,7 @@
       <i class="fa-solid fa-utensils"></i>Reserve a Table
     </a>
   </div>
+  <div class="nav-overlay" id="navOverlay"></div>
 </nav>
 
 <!-- ===== ARTICLE ===== -->
@@ -164,5 +169,6 @@
   <div class="footer-copyright">© 2026 Bacino Italian Bistro · Pasir Panjang, Singapore</div>
 </footer>
 
+<script src="../../nav-toggle.js"></script>
 </body>
 </html>
