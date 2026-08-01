@@ -770,6 +770,7 @@ br.mobile-break { display: none; }
 .club-form-row .club-form-field { margin-bottom: 0; }
 .club-form-field label { font-size: 13px; font-weight: 700; letter-spacing: 0.05em; color: var(--ink); }
 .club-form-field .optional-tag { font-weight: 500; color: var(--text-faint); text-transform: none; letter-spacing: 0; }
+.club-form-field .required-tag { color: #b23a2e; }
 .club-form-field input,
 .club-form-field select {
   font: inherit; font-size: 15.5px;
