@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="../styles.css?v=26">
+<link rel="stylesheet" href="../styles.css?v=27">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -208,9 +208,10 @@
       </select>
     </div>
 
-    <button type="submit" class="btn btn-fill club-form-submit">
+    <button type="submit" class="btn btn-fill club-form-submit" id="club88Submit">
       <i class="fa-solid fa-star"></i>Join Bacino Club 88
     </button>
+    <p class="club-form-error" id="club88Error" hidden>Something went wrong sending your details. Please try again, or email us directly at <a href="mailto:hello@bacino.sg">hello@bacino.sg</a>.</p>
     <p class="club-form-note">By joining, you agree to be contacted by Bacino Italian Bistro about your membership.</p>
     <p class="club-fineprint">Terms &amp; conditions apply. Valid for 12 months from date of purchase. Dine-in only. Not valid with other promotions. Management reserves the right to amend the programme terms.</p>
   </form>
@@ -267,12 +268,36 @@
   }
   email.addEventListener('input', checkEmailsMatch);
   confirmEmail.addEventListener('input', checkEmailsMatch);
+
+  var submitBtn = document.getElementById('club88Submit');
+  var errorNote = document.getElementById('club88Error');
+  var firstName = document.getElementById('firstName');
+
   form.addEventListener('submit', function (e) {
+    e.preventDefault();
     checkEmailsMatch();
     if (!form.checkValidity()) {
-      e.preventDefault();
       form.reportValidity();
+      return;
     }
+
+    errorNote.hidden = true;
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.7';
+
+    fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('submit failed');
+      var name = encodeURIComponent(firstName.value.trim());
+      window.location.href = 'welcome/' + (name ? '?name=' + name : '');
+    }).catch(function () {
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '';
+      errorNote.hidden = false;
+    });
   });
 })();
 </script>

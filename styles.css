@@ -790,6 +790,8 @@ br.mobile-break { display: none; }
 .club-form-field input.touched:invalid { border-color: #b23a2e; }
 .club-form-submit { width: 100%; justify-content: center; margin-top: 8px; font-size: 17px; }
 .club-form-note { font-size: 12.5px; color: var(--text-faint); text-align: center; margin: 16px 0 0; }
+.club-form-error { font-size: 13.5px; font-weight: 600; color: #b23a2e; text-align: center; margin: 16px 0 0; }
+.club-form-error a { text-decoration: underline; }
 .club-form-honeypot { position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; pointer-events: none; }
 .club-fineprint {
   font-size: 12px; line-height: 1.7; color: var(--text-faint); text-align: center;
@@ -797,10 +799,41 @@ br.mobile-break { display: none; }
   border-top: 1px solid rgba(42, 32, 25, 0.12);
 }
 
+/* ===== Club 88 welcome ===== */
+.welcome-section {
+  min-height: 80vh;
+  display: flex; align-items: center;
+  padding: calc(var(--nav-height, 88px) + clamp(32px, 4vw, 56px)) clamp(24px, 5vw, 64px) clamp(64px, 7vw, 100px);
+  background: var(--cream-bg);
+}
+.welcome-card {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+.welcome-visual { position: relative; display: flex; justify-content: center; }
+.welcome-img { width: 100%; max-width: 380px; border-radius: 24px; }
+.welcome-bubble {
+  position: absolute; top: 4%; right: -6%;
+  max-width: 230px;
+  background: #b23a2e; color: #fff;
+  padding: 18px 22px;
+  border-radius: 28px 28px 28px 6px;
+  font-weight: 800; font-size: 17px; line-height: 1.35; text-align: center;
+  box-shadow: 0 14px 30px rgba(20, 12, 6, 0.28);
+}
+.welcome-title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 18px; color: var(--ink); }
+.welcome-text { font-size: 17px; line-height: 1.7; color: var(--text-brown); margin: 0 0 30px; max-width: 46ch; }
+
 @media (max-width: 900px) {
   .club-benefits-grid { grid-template-columns: 1fr 1fr; }
   .club-card-showcase { grid-template-columns: 1fr; text-align: center; }
   .club-card-copy p { margin-left: auto; margin-right: auto; }
+  .welcome-card { grid-template-columns: 1fr; text-align: center; }
+  .welcome-text { margin-left: auto; margin-right: auto; }
+  .welcome-visual { flex-direction: column; margin-bottom: 8px; }
+  .welcome-bubble { position: static; margin: -32px auto 0; max-width: 280px; }
 }
 @media (max-width: 640px) {
   .club-benefits-grid { grid-template-columns: 1fr; }
