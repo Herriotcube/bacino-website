@@ -744,9 +744,9 @@ br.mobile-break { display: none; }
   padding: clamp(40px, 4vw, 56px) clamp(24px, 5vw, 64px);
   text-align: center;
 }
-.club-info-item { max-width: 180px; }
-.club-info-icon { font-size: 22px; color: var(--olive); margin-bottom: 10px; }
-.club-info-label { font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-brown); line-height: 1.5; }
+.club-info-item { max-width: 260px; }
+.club-info-icon { font-size: 35px; color: var(--olive); margin-bottom: 16px; }
+.club-info-label { font-size: 20px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-brown); line-height: 1.5; }
 
 .club-form-section {
   background: linear-gradient(90deg, rgba(24, 17, 11, 0.82) 0%, rgba(24, 17, 11, 0.7) 50%, rgba(24, 17, 11, 0.82) 100%),
