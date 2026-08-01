@@ -717,6 +717,9 @@ br.mobile-break { display: none; }
   color: var(--olive);
   font-size: 24px;
 }
+.club-benefit-card:nth-child(3n+1) .club-benefit-icon { background: rgba(31, 122, 77, 0.14); color: #1f7a4d; }
+.club-benefit-card:nth-child(3n+2) .club-benefit-icon { background: #efe9dc; border: 1.5px solid rgba(42, 32, 25, 0.14); color: var(--ink); }
+.club-benefit-card:nth-child(3n) .club-benefit-icon { background: rgba(178, 58, 46, 0.14); color: #b23a2e; }
 .club-benefit-title { font-size: 18px; font-weight: 800; letter-spacing: -0.005em; color: var(--ink); margin: 0 0 8px; }
 .club-benefit-desc { font-size: 15px; line-height: 1.6; color: var(--text-brown); margin: 0; }
 
