@@ -685,13 +685,15 @@ br.mobile-break { display: none; }
   display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
   width: 180px; height: 180px; border-radius: 50%;
   border: 3px solid var(--gold-eyebrow);
-  background: radial-gradient(circle at 50% 38%, rgba(230, 199, 154, 0.32) 0%, rgba(230, 199, 154, 0.1) 70%, rgba(230, 199, 154, 0.04) 100%);
+  background-image: linear-gradient(rgba(20, 8, 6, 0.6), rgba(20, 8, 6, 0.6)), url("../assets/bacino-logo.png");
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 0 0 6px rgba(230, 199, 154, 0.1), 0 0 48px rgba(230, 199, 154, 0.4), 0 20px 40px rgba(0, 0, 0, 0.35);
   margin: 0 auto 36px;
 }
-.club-price-badge .amount { font-size: 44px; font-weight: 800; color: var(--gold-eyebrow); letter-spacing: -0.02em; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35); }
-.club-price-badge .period { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #f0e7d6; margin-top: 4px; }
-.club-price-badge .label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #d9c299; margin-bottom: 6px; }
+.club-price-badge .amount { font-size: 44px; font-weight: 800; color: #ffffff; letter-spacing: -0.02em; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55); }
+.club-price-badge .period { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #ffffff; margin-top: 4px; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
+.club-price-badge .label { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff; margin-bottom: 6px; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
 .club-hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
 
 .club-benefits-section { padding: clamp(56px, 7vw, 100px) clamp(24px, 5vw, 64px); }
