@@ -746,6 +746,7 @@ br.mobile-break { display: none; }
 }
 .club-info-item { max-width: 260px; }
 .club-info-icon { font-size: 35px; color: var(--olive); margin-bottom: 16px; }
+.club-info-item:nth-child(4) .club-info-icon { color: #b23a2e; }
 .club-info-label { font-size: 20px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-brown); line-height: 1.5; }
 
 .club-form-section {
