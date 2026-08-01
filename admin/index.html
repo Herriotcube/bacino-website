@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu Editor — Bacino Italian Bistro</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<style>
+  :root {
+    --olive: #6c7245;
+    --olive-dark: #565b32;
+    --ink: #2a2019;
+    --cream-bg: #f5eee1;
+    --cream-light: #faf5ea;
+    --card-surface: #fbf7ee;
+    --text-brown: #5c4e40;
+    --text-faint: #8a7a64;
+    --dotted-line: #c2ad86;
+    --red: #b23a2e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream-bg);
+    color: var(--ink);
+    font-family: "Hanken Grotesk", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--olive); }
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+    background: var(--ink); color: var(--cream-light);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+  .topbar-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: 0.04em; }
+  .topbar-brand img { height: 30px; width: 30px; object-fit: contain; }
+  .topbar-status { font-size: 13px; color: #d9cdb8; display: flex; align-items: center; gap: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-faint); flex: none; }
+  .dot.on { background: #6c9a4a; }
+  .topbar-actions { display: flex; align-items: center; gap: 10px; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font: inherit; font-weight: 700; font-size: 14.5px;
+    padding: 10px 20px;
+    border-radius: 999px; border: none;
+    cursor: pointer;
+    transition: filter 0.15s ease, transform 0.15s ease;
+  }
+  .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+  .btn-fill { background: var(--olive); color: #fff; }
+  .btn-fill:hover:not(:disabled) { filter: brightness(1.08); }
+  .btn-outline { background: transparent; border: 1.5px solid rgba(245,238,225,0.4); color: var(--cream-light); }
+  .btn-outline:hover:not(:disabled) { background: rgba(245,238,225,0.1); }
+  .btn-ghost { background: rgba(42,32,25,0.06); color: var(--ink); }
+  .btn-ghost:hover:not(:disabled) { background: rgba(42,32,25,0.1); }
+  .btn-danger { background: transparent; color: var(--red); }
+  .btn-danger:hover:not(:disabled) { background: rgba(178,58,46,0.08); }
+  .btn-sm { padding: 6px 12px; font-size: 12.5px; }
+  .btn-icon { width: 30px; height: 30px; padding: 0; justify-content: center; border-radius: 8px; }
+
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 24px 100px; }
+
+  /* ---- setup panel ---- */
+  .setup-card {
+    max-width: 620px; margin: 60px auto;
+    background: var(--card-surface);
+    border: 1px solid rgba(42,32,25,0.08);
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 20px 50px rgba(42,32,25,0.08);
+  }
+  .setup-card h1 { font-size: 24px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .setup-card .lead { color: var(--text-brown); font-size: 15px; line-height: 1.6; margin: 0 0 24px; }
+  .setup-steps { margin: 0 0 24px; padding: 0; list-style: none; counter-reset: step; }
+  .setup-steps li {
+    counter-increment: step;
+    display: flex; gap: 12px;
+    font-size: 14.5px; line-height: 1.6; color: var(--text-brown);
+    margin-bottom: 14px;
+  }
+  .setup-steps li::before {
+    content: counter(step);
+    flex: none;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--olive); color: #fff;
+    font-size: 12.5px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .setup-steps code { background: rgba(42,32,25,0.07); padding: 2px 6px; border-radius: 5px; font-size: 13px; }
+  .field-label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  .token-input-row { display: flex; gap: 10px; }
+  input[type="password"], input[type="text"], textarea, select {
+    font: inherit; font-size: 15px;
+    padding: 11px 14px;
+    border-radius: 10px;
+    border: 1.5px solid var(--dotted-line);
+    background: #fff;
+    color: var(--ink);
+    width: 100%;
+  }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: var(--olive); box-shadow: 0 0 0 3px rgba(108,114,69,0.16); }
+  .setup-error { margin-top: 14px; font-size: 13.5px; color: var(--red); font-weight: 600; }
+  .setup-note { margin-top: 18px; font-size: 12.5px; color: var(--text-faint); line-height: 1.6; }
+
+  /* ---- loading ---- */
+  .center-note { text-align: center; padding: 80px 24px; color: var(--text-brown); }
+
+  /* ---- tabs ---- */
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  .tab-btn {
+    font: inherit; font-weight: 700; font-size: 14px;
+    padding: 10px 18px; border-radius: 999px;
+    border: 1.5px solid var(--dotted-line);
+    background: transparent; color: var(--text-brown);
+    cursor: pointer;
+  }
+  .tab-btn.active { background: var(--ink); border-color: var(--ink); color: var(--cream-light); }
+
+  /* ---- category card ---- */
+  .category-card {
+    background: var(--card-surface);
+    border: 1px solid rgba(42,32,25,0.08);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 20px;
+  }
+  .category-head { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+  .category-head-fields { flex: 1; display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; }
+  .category-head-fields .full { grid-column: 1 / -1; }
+  .category-controls { display: flex; gap: 6px; flex: none; padding-top: 2px; }
+  .field-mini-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint); margin-bottom: 4px; display: block; }
+
+  .items-table { border-top: 1px solid rgba(42,32,25,0.1); padding-top: 12px; }
+  .item-row {
+    display: grid; grid-template-columns: 1.6fr 0.7fr 2.2fr auto auto;
+    gap: 8px; align-items: start;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(42,32,25,0.12);
+  }
+  .item-row:last-of-type { border-bottom: none; }
+  .item-row input { font-size: 13.5px; padding: 8px 10px; }
+  .item-row textarea { font-size: 13.5px; padding: 8px 10px; resize: vertical; min-height: 38px; }
+  .item-flags { display: flex; flex-direction: column; gap: 4px; font-size: 11.5px; color: var(--text-brown); white-space: nowrap; padding-top: 6px; }
+  .item-flags label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+  .item-controls { display: flex; flex-direction: column; gap: 4px; padding-top: 4px; }
+
+  .add-item-btn { margin-top: 10px; }
+  .add-category-btn { margin-bottom: 28px; }
+
+  /* ---- save bar ---- */
+  .savebar {
+    position: sticky; bottom: 0; z-index: 15;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    background: rgba(245,238,225,0.97);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(42,32,25,0.1);
+    padding: 14px 24px;
+    box-shadow: 0 -6px 20px rgba(42,32,25,0.06);
+  }
+  .savebar-status { font-size: 13.5px; color: var(--text-brown); flex: 1; }
+  .savebar-status.error { color: var(--red); font-weight: 600; }
+  .savebar-status a { font-weight: 700; }
+
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-brand">
+    <img src="../assets/bacino-logo-small.png" alt="">
+    Bacino Menu Editor
+  </div>
+  <div class="topbar-status" id="topbarStatus">
+    <span class="dot" id="statusDot"></span>
+    <span id="statusText">Not connected</span>
+  </div>
+  <div class="topbar-actions">
+    <button type="button" class="btn btn-outline btn-sm" id="disconnectBtn" hidden>Disconnect</button>
+  </div>
+</div>
+
+<!-- ===== SETUP ===== -->
+<div id="setupPanel" class="wrap">
+  <div class="setup-card">
+    <h1>Connect your GitHub account</h1>
+    <p class="lead">You'll need a personal access token so the editor can save your changes. It only takes a minute to set up, and you only need to do it once.</p>
+    <ol class="setup-steps">
+      <li>Ask Herriot to add you as a <strong>collaborator</strong> on the <code>bacino-website</code> repo if you haven't been already.</li>
+      <li>Go to <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> and sign in.</li>
+      <li>Under <strong>Repository access</strong>, choose "Only select repositories" and pick <code>Herriotcube/bacino-website</code>.</li>
+      <li>Under <strong>Permissions → Repository permissions</strong>, set <strong>Contents</strong> to "Read and write" and <strong>Pull requests</strong> to "Read and write".</li>
+      <li>Click <strong>Generate token</strong>, then copy it and paste it below.</li>
+    </ol>
+    <label class="field-label" for="tokenInput">GitHub personal access token</label>
+    <div class="token-input-row">
+      <input type="password" id="tokenInput" placeholder="github_pat_...">
+      <button type="button" class="btn btn-fill" id="connectBtn">Connect</button>
+    </div>
+    <div class="setup-error" id="setupError" hidden></div>
+    <p class="setup-note">Your token is stored only in this browser (never sent anywhere except directly to GitHub) and is only used to save your menu edits.</p>
+  </div>
+</div>
+
+<!-- ===== EDITOR ===== -->
+<div id="editorPanel" class="wrap" hidden>
+  <div class="tabs" id="sectionTabs"></div>
+  <div id="sectionContent"></div>
+  <button type="button" class="btn btn-ghost add-category-btn" id="addCategoryBtn">
+    <i class="fa-solid fa-plus"></i> Add a new category
+  </button>
+</div>
+
+<div class="savebar" id="saveBar" hidden>
+  <div class="savebar-status" id="saveStatus">Editing — changes aren't saved until you submit them.</div>
+  <button type="button" class="btn btn-fill" id="saveBtn">
+    <i class="fa-solid fa-paper-plane"></i> Submit changes for review
+  </button>
+</div>
+
+<script src="admin.js?v=1"></script>
+</body>
+</html>
