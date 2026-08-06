@@ -30,19 +30,19 @@ const MENU_DATA = {
     { key: "pasta", label: "Pasta & Risotto", items: [
       { name: "Home-Made Lasagna", price: "27", desc: "Flat pasta layered with meat sauce, béchamel and parmigiano." },
       { name: "Spaghetti Aglio E Olio", price: "19", desc: "Garlic, chilli and olive oil (add tiger prawn, $2 each)." },
+      { name: "Home-Made Lamb Ragù Ravioli", price: "40", desc: "Ravioli filled with minced lamb, cooked in lamb ragù sauce.", special: true },
       { name: "Fettuccine Bolognese", price: "26", desc: "Rich, flavoured mixed-meat tomato sauce." },
       { name: "Spaghetti / Linguine Vongole", price: "27", desc: "Clams, white wine, olive oil and garlic." },
       { name: "Spaghetti Seafood", price: "29", desc: "Mixed seafood, tomato sauce, olive oil and garlic." },
+      { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic.", special: true },
       { name: "Penne Arrabbiata", price: "22", desc: "Fresh tomatoes and chilli pepper." },
       { name: "Spaghetti Carbonara", price: "25", desc: "Guanciale, eggs, pecorino cheese and black pepper." },
       { name: "Spaghetti Cacio E Pepe", price: "23", desc: "Pecorino cheese and black pepper." },
       { name: "Linguine Al Pesto", price: "22", desc: "Home-made pesto." },
+      { name: "Home-Made Malloreddus with Friarielli", price: "35", desc: "Wheat semolina gnocchi with turnip greens, chilli, garlic and olive oil.", special: true },
       { name: "Home-Made Gnocchi", price: "24", desc: "Four cheese, tomato, or butter sage sauce." },
       { name: "Risotto Al Nero Di Seppia", price: "27", desc: "Squid ink and white wine." },
-      { name: "Risotto Funghi E Tartufo", price: "27", desc: "Porcini mushroom and truffle oil." },
-      { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic.", special: true },
-      { name: "Home-Made Malloreddus with Friarielli", price: "35", desc: "Wheat semolina gnocchi with turnip greens, chilli, garlic and olive oil.", special: true },
-      { name: "Home-Made Lamb Ragù Ravioli", price: "40", desc: "Ravioli filled with minced lamb, cooked in lamb ragù sauce.", special: true }
+      { name: "Risotto Funghi E Tartufo", price: "27", desc: "Porcini mushroom and truffle oil." }
     ]},
     { key: "pizza", label: "Pizza", note: "Prices shown as Half / Full. Extra toppings available on request.", items: [
       { name: "Burrata", price: "18 / 30", desc: "Burrata, Parma ham, rocket." },
