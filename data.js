@@ -99,13 +99,14 @@ const MENU_DATA = {
 
   specials: [
     { key: "specials", label: "Chef's Specials", note: "Francesco's signature creations. Ask your server about availability.", items: [
-      { name: "Home-Made Pappardelle with Lamb Ragù", price: "40", desc: "Flat pasta with lamb ragù sauce." },
-      { name: "Home-Made Spaghetti alla Bottarga", price: "42", desc: "Cooked in crab bisque with prawn, cherry tomato and bottarga." },
+      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies, stuffed with breadcrumbs, black olive and garlic." },
+      { name: "Home-Made Lamb Ragù Ravioli", price: "40", desc: "Ravioli filled with minced lamb, cooked in lamb ragù sauce." },
+      { name: "Home-Made Malloreddus with Friarielli", price: "35", desc: "Wheat semolina gnocchi with turnip greens, chilli, garlic and olive oil." },
       { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic." },
-      { name: "Pepperoni Pizza", price: "18 / 30", desc: "Tomato sauce, Salami Milano, mozzarella, smoked cheese, black olive and red onion." },
+      { name: "Salsiccia e Friarielli Pizza", price: "19 / 32", desc: "Turnip greens, pork sausage, mozzarella and smoked cheese." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato." },
       { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g)." },
-      { name: "Traditional Italian Chocolate Almond Cake", price: "18", desc: "Dark chocolate, almond extract and flour, topped with almond flakes." }
+      { name: "Traditional Italian Chocolate Salami", price: "18", desc: "Dark chocolate, broken biscuit, butter and almond." }
     ]}
   ],
 
