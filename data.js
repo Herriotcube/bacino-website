@@ -106,7 +106,8 @@ const MENU_DATA = {
       { name: "Salsiccia e Friarielli Pizza", price: "19 / 32", desc: "Turnip greens, pork sausage, mozzarella and smoked cheese." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato." },
       { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g)." },
-      { name: "Traditional Italian Chocolate Salami", price: "18", desc: "Dark chocolate, broken biscuit, butter and almond." }
+      { name: "Traditional Italian Chocolate Salami", price: "18", desc: "Dark chocolate, broken biscuit, butter and almond." },
+      { name: "Pepperoni Pizza", price: "18 / 30", desc: "Tomato sauce, Salami Milano, mozzarella, smoked cheese, black olive and red onion." }
     ]}
   ],
 
