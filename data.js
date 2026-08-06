@@ -33,8 +33,6 @@ const MENU_DATA = {
       { name: "Fettuccine Bolognese", price: "26", desc: "Rich, flavoured mixed-meat tomato sauce." },
       { name: "Spaghetti / Linguine Vongole", price: "27", desc: "Clams, white wine, olive oil and garlic." },
       { name: "Spaghetti Seafood", price: "29", desc: "Mixed seafood, tomato sauce, olive oil and garlic." },
-      { name: "Home-Made Pappardelle with Lamb Ragù", price: "40", desc: "Flat pasta with lamb ragù sauce.", special: true },
-      { name: "Home-Made Spaghetti alla Bottarga", price: "42", desc: "Cooked in crab bisque with prawn, cherry tomato and bottarga.", special: true },
       { name: "Penne Arrabbiata", price: "22", desc: "Fresh tomatoes and chilli pepper." },
       { name: "Spaghetti Carbonara", price: "25", desc: "Guanciale, eggs, pecorino cheese and black pepper." },
       { name: "Spaghetti Cacio E Pepe", price: "23", desc: "Pecorino cheese and black pepper." },
@@ -81,7 +79,6 @@ const MENU_DATA = {
       { name: "Tiramisu", price: "16", desc: "Coffee and rum soaked sponge, mascarpone and cocoa." },
       { name: "Panna Cotta with Mango Puree", price: "16", desc: "Sweetened Italian cream with mango purée." },
       { name: "Sicilian Cannoli", price: "18", desc: "Fried pastry shell with sweet ricotta filling." },
-      { name: "Traditional Italian Chocolate Almond Cake", price: "18", desc: "Dark chocolate, almond extract and flour, topped with almond flakes.", special: true },
       { name: "Gelato", price: "9", desc: "Two scoops — vanilla, dark chocolate or pistachio." },
       { name: "Affogato", price: "12", desc: "Espresso poured over vanilla gelato." },
       { name: "Traditional Italian Chocolate Salami", price: "18", desc: "Dark chocolate, broken biscuit, butter and almond.", special: true }

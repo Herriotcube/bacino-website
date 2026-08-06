@@ -56,7 +56,7 @@
       ctaColor: "#fbf7ee", catKey: "pasta",
       overlayEyebrow: "Most loved · Pasta", overlayColor: "#9ed3ac",
       dishes: [
-        { name: "Spaghetti alla Bottarga", cat: "specials", section: "specials" },
+        { name: "Lobster Linguine", cat: "pasta" },
         { name: "Spaghetti Carbonara", cat: "pasta" },
         { name: "Spaghetti / Linguine Vongole", cat: "pasta" }
       ]
