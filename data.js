@@ -11,7 +11,8 @@ const MENU_DATA = {
       { name: "Arancini", price: "20", desc: "Deep-fried breaded rice ball, stuffed with mixed meat and cheese." },
       { name: "Bruschetta", price: "15", desc: "Topping: cherry tomato." },
       { name: "Focaccia", price: "15", desc: "Oven-baked home-made pizza bread." },
-      { name: "Garlic Pizza Bread", price: "9", desc: "Oven-baked home-made pizza bread." }
+      { name: "Garlic Pizza Bread", price: "9", desc: "Oven-baked home-made pizza bread." },
+      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies, stuffed with breadcrumbs, black olive and garlic.", special: true }
     ]},
     { key: "anti-freddi", label: "Antipasti Freddi", items: [
       { name: "Beef Tartar", price: "26", desc: "Chopped vegetables (celery, onion, capers) and olive oil." },
@@ -41,7 +42,9 @@ const MENU_DATA = {
       { name: "Home-Made Gnocchi", price: "24", desc: "Four cheese, tomato, or butter sage sauce." },
       { name: "Risotto Al Nero Di Seppia", price: "27", desc: "Squid ink and white wine." },
       { name: "Risotto Funghi E Tartufo", price: "27", desc: "Porcini mushroom and truffle oil." },
-      { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic.", special: true }
+      { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic.", special: true },
+      { name: "Home-Made Malloreddus with Friarielli", price: "35", desc: "Wheat semolina gnocchi with turnip greens, chilli, garlic and olive oil.", special: true },
+      { name: "Home-Made Lamb Ragù Ravioli", price: "40", desc: "Ravioli filled with minced lamb, cooked in lamb ragù sauce.", special: true }
     ]},
     { key: "pizza", label: "Pizza", note: "Prices shown as Half / Full. Extra toppings available on request.", items: [
       { name: "Burrata", price: "18 / 30", desc: "Burrata, Parma ham, rocket." },
@@ -56,7 +59,8 @@ const MENU_DATA = {
       { name: "Bufalina", price: "16 / 28", desc: "Tomato sauce, buffalo mozzarella, basil." },
       { name: "Capricciosa", price: "16 / 28", desc: "Tomato sauce, mozzarella, artichoke, roasted ham, mushroom, black olive." },
       { name: "Milano", price: "14 / 24", desc: "Tomato sauce, mozzarella, tuna, onion." },
-      { name: "Vegetarian", price: "14 / 24", desc: "Tomato sauce, mozzarella, zucchini, eggplant, artichoke, bell pepper." }
+      { name: "Vegetarian", price: "14 / 24", desc: "Tomato sauce, mozzarella, zucchini, eggplant, artichoke, bell pepper." },
+      { name: "Salsiccia e Friarielli", price: "19 / 32", desc: "Turnip greens, pork sausage, mozzarella and smoked cheese.", special: true }
     ]},
     { key: "mains", label: "Meat & Fish", items: [
       { name: "Filetto Di Manzo", price: "45", desc: "Grilled beef tenderloin." },
@@ -79,7 +83,8 @@ const MENU_DATA = {
       { name: "Sicilian Cannoli", price: "18", desc: "Fried pastry shell with sweet ricotta filling." },
       { name: "Traditional Italian Chocolate Almond Cake", price: "18", desc: "Dark chocolate, almond extract and flour, topped with almond flakes.", special: true },
       { name: "Gelato", price: "9", desc: "Two scoops — vanilla, dark chocolate or pistachio." },
-      { name: "Affogato", price: "12", desc: "Espresso poured over vanilla gelato." }
+      { name: "Affogato", price: "12", desc: "Espresso poured over vanilla gelato." },
+      { name: "Traditional Italian Chocolate Salami", price: "18", desc: "Dark chocolate, broken biscuit, butter and almond.", special: true }
     ]}
   ],
 
