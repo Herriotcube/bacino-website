@@ -86,15 +86,15 @@ const MENU_DATA = {
   ],
 
   setlunch: [
-    { key: "sl-2course", label: "2 Courses", note: "2-Courses · S$19 per person\nAdditional S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draught.\nAvailable Wednesday to Saturday, excl. public holidays.", items: [
-      { name: "Spaghetti Aglio e Olio", price: "", desc: "Garlic, chilli and olive oil. Add tiger prawn, $2 each.", heading: "Main Course" },
+    { key: "sl-2course", label: "2 Courses", note: "2-Courses · S$19 per person\nAdditional S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draft.\nAvailable Wednesday to Saturday, excl. public holidays and celebration days.", items: [
+      { name: "Spaghetti Arrabbiata", price: "", desc: "Tomato sauce and chilli pepper.", heading: "Main Course" },
       { name: "Half Margherita Pizza", price: "", desc: "Tomato sauce, mozzarella and basil.", orAlt: true },
       { name: "Gelato", price: "", desc: "One scoop — vanilla, dark chocolate or pistachio.", heading: "Dessert" }
     ]},
-    { key: "sl-3course", label: "3 Courses", note: "3-Courses · S$24 per person\nAdditional S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draught.\nAvailable Wednesday to Saturday, excl. public holidays.", items: [
-      { name: "Mixed Green Salad", price: "", desc: "Fresh garden leaves.", heading: "Starter" },
+    { key: "sl-3course", label: "3 Courses", note: "3-Courses · S$24 per person\nAdditional S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draft.\nAvailable Wednesday to Saturday, excl. public holidays and celebration days.", items: [
+      { name: "Mushroom Soup", price: "", desc: "Creamy mushroom soup.", heading: "Starter" },
       { name: "Spaghetti al Pesto", price: "", desc: "Home-made pesto sauce.", heading: "Main Course" },
-      { name: "Half Diavola Pizza", price: "", desc: "Mozzarella, spicy salami and tomato sauce.", orAlt: true },
+      { name: "Half Milano Pizza", price: "", desc: "Tomato sauce, mozzarella, tuna, onion.", orAlt: true },
       { name: "Tiramisu", price: "", desc: "Coffee and rum soaked sponge, mascarpone and cocoa.", heading: "Dessert" }
     ]}
   ],
