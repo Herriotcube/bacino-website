@@ -93,8 +93,8 @@ const MENU_DATA = {
     ]},
     { key: "sl-3course", label: "3 Courses", note: "3-Courses · S$24 per person\nAdditional S$9 for your first glass of Prosecco, Malvasia Chardonnay, Sangiovese Merlot or Peroni Draft.\nAvailable Wednesday to Saturday, excl. public holidays and celebration days.", items: [
       { name: "Mushroom Soup", price: "", desc: "Creamy mushroom soup.", heading: "Starter" },
-      { name: "Spaghetti al Pesto", price: "", desc: "Home-made pesto sauce.", heading: "Main Course" },
-      { name: "Half Milano Pizza", price: "", desc: "Tomato sauce, mozzarella, tuna, onion.", orAlt: true },
+      { name: "Spaghetti Aglio E Olio", price: "", desc: "Garlic, chilli and olive oil (add tiger prawn, $2 each).", heading: "Main Course" },
+      { name: "Half Diavola Pizza", price: "", desc: "Mozzarella, spicy salami and tomato sauce.", orAlt: true },
       { name: "Tiramisu", price: "", desc: "Coffee and rum soaked sponge, mascarpone and cocoa.", heading: "Dessert" }
     ]}
   ],
