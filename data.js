@@ -59,14 +59,14 @@ const MENU_DATA = {
       { name: "Vegetarian", price: "14 / 24", desc: "Tomato sauce, mozzarella, zucchini, eggplant, artichoke, bell pepper." }
     ]},
     { key: "mains", label: "Meat & Fish", items: [
+      { name: "Calamari Ripieni", price: "28", desc: "Stuffed calamari, slow-cooked with tomato sauce.", special: true },
       { name: "Filetto Di Manzo", price: "45", desc: "Grilled beef tenderloin." },
       { name: "Costoletta D'Agnello", price: "45", desc: "Grilled lamb rack." },
       { name: "Grilled Iberico Pork", price: "40", desc: "Served with mixed vegetables and caramelised onion." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato.", special: true },
       { name: "Branzino Al Cartoccio", price: "45", desc: "Oven-baked whole seabass." },
       { name: "Sous Vide Cod Fish", price: "40", desc: "Served with home-made pumpkin purée." },
-      { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g).", special: true },
-      { name: "Calamari Ripieni", price: "28", desc: "Stuffed calamari, slow-cooked with tomato sauce.", special: true }
+      { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g).", special: true }
     ]},
     { key: "sides", label: "Sides", items: [
       { name: "Potato Fries / with Truffle Oil*", price: "10 / 13*", desc: "Plain, or tossed in truffle oil." },
