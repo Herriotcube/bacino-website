@@ -40,7 +40,8 @@ const MENU_DATA = {
       { name: "Linguine Al Pesto", price: "22", desc: "Home-made pesto." },
       { name: "Home-Made Gnocchi", price: "24", desc: "Four cheese, tomato, or butter sage sauce." },
       { name: "Risotto Al Nero Di Seppia", price: "27", desc: "Squid ink and white wine." },
-      { name: "Risotto Funghi E Tartufo", price: "27", desc: "Porcini mushroom and truffle oil." }
+      { name: "Risotto Funghi E Tartufo", price: "27", desc: "Porcini mushroom and truffle oil." },
+      { name: "Home-Made Tagliolini Al Nero Di Seppia", price: "43", desc: "Squid ink pasta with cuttlefish, carrot, onion, celery, green pea and bottarga.", special: true }
     ]},
     { key: "pizza", label: "Pizza", note: "Prices shown as Half / Full. Extra toppings available on request.", items: [
       { name: "Burrata", price: "18 / 30", desc: "Burrata, Parma ham, rocket." },
@@ -64,7 +65,8 @@ const MENU_DATA = {
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato.", special: true },
       { name: "Branzino Al Cartoccio", price: "45", desc: "Oven-baked whole seabass." },
       { name: "Sous Vide Cod Fish", price: "40", desc: "Served with home-made pumpkin purée." },
-      { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g).", special: true }
+      { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g).", special: true },
+      { name: "Calamari Ripieni", price: "28", desc: "Stuffed calamari, slow-cooked with tomato sauce.", special: true }
     ]},
     { key: "sides", label: "Sides", items: [
       { name: "Potato Fries / with Truffle Oil*", price: "10 / 13*", desc: "Plain, or tossed in truffle oil." },
