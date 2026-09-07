@@ -11,8 +11,7 @@ const MENU_DATA = {
       { name: "Arancini", price: "20", desc: "Deep-fried breaded rice ball, stuffed with mixed meat and cheese." },
       { name: "Bruschetta", price: "15", desc: "Topping: cherry tomato." },
       { name: "Focaccia", price: "15", desc: "Oven-baked home-made pizza bread." },
-      { name: "Garlic Pizza Bread", price: "9", desc: "Oven-baked home-made pizza bread." },
-      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies, stuffed with breadcrumbs, black olive and garlic.", special: true }
+      { name: "Garlic Pizza Bread", price: "9", desc: "Oven-baked home-made pizza bread." }
     ]},
     { key: "anti-freddi", label: "Antipasti Freddi", items: [
       { name: "Beef Tartar", price: "26", desc: "Chopped vegetables (celery, onion, capers) and olive oil." },
@@ -39,7 +38,6 @@ const MENU_DATA = {
       { name: "Spaghetti Carbonara", price: "25", desc: "Guanciale, eggs, pecorino cheese and black pepper." },
       { name: "Spaghetti Cacio E Pepe", price: "23", desc: "Pecorino cheese and black pepper." },
       { name: "Linguine Al Pesto", price: "22", desc: "Home-made pesto." },
-      { name: "Home-Made Malloreddus with Friarielli", price: "35", desc: "Wheat semolina gnocchi with turnip greens, chilli, garlic and olive oil.", special: true },
       { name: "Home-Made Gnocchi", price: "24", desc: "Four cheese, tomato, or butter sage sauce." },
       { name: "Risotto Al Nero Di Seppia", price: "27", desc: "Squid ink and white wine." },
       { name: "Risotto Funghi E Tartufo", price: "27", desc: "Porcini mushroom and truffle oil." }
@@ -57,8 +55,7 @@ const MENU_DATA = {
       { name: "Bufalina", price: "16 / 28", desc: "Tomato sauce, buffalo mozzarella, basil." },
       { name: "Capricciosa", price: "16 / 28", desc: "Tomato sauce, mozzarella, artichoke, roasted ham, mushroom, black olive." },
       { name: "Milano", price: "14 / 24", desc: "Tomato sauce, mozzarella, tuna, onion." },
-      { name: "Vegetarian", price: "14 / 24", desc: "Tomato sauce, mozzarella, zucchini, eggplant, artichoke, bell pepper." },
-      { name: "Salsiccia e Friarielli", price: "19 / 32", desc: "Turnip greens, pork sausage, mozzarella and smoked cheese.", special: true }
+      { name: "Vegetarian", price: "14 / 24", desc: "Tomato sauce, mozzarella, zucchini, eggplant, artichoke, bell pepper." }
     ]},
     { key: "mains", label: "Meat & Fish", items: [
       { name: "Filetto Di Manzo", price: "45", desc: "Grilled beef tenderloin." },
@@ -101,15 +98,14 @@ const MENU_DATA = {
 
   specials: [
     { key: "specials", label: "Chef's Specials", note: "Francesco's signature creations. Ask your server about availability.", items: [
-      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies, stuffed with breadcrumbs, black olive and garlic." },
+      { name: "Calamari Ripieni", price: "28", desc: "Stuffed calamari, slow-cooked with tomato sauce." },
       { name: "Home-Made Lamb Ragù Ravioli", price: "40", desc: "Ravioli filled with minced lamb, cooked in lamb ragù sauce." },
-      { name: "Home-Made Malloreddus with Friarielli", price: "35", desc: "Wheat semolina gnocchi with turnip greens, chilli, garlic and olive oil." },
+      { name: "Home-Made Tagliolini Al Nero Di Seppia", price: "43", desc: "Squid ink pasta with cuttlefish, carrot, onion, celery, green pea and bottarga." },
       { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic." },
-      { name: "Salsiccia e Friarielli Pizza", price: "19 / 32", desc: "Turnip greens, pork sausage, mozzarella and smoked cheese." },
+      { name: "Pepperoni Pizza", price: "18 / 30", desc: "Tomato sauce, Salami Milano, mozzarella, smoked cheese, black olive and red onion." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato." },
       { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g)." },
-      { name: "Traditional Italian Chocolate Salami", price: "18", desc: "Dark chocolate, broken biscuit, butter and almond." },
-      { name: "Pepperoni Pizza", price: "18 / 30", desc: "Tomato sauce, Salami Milano, mozzarella, smoked cheese, black olive and red onion." }
+      { name: "Traditional Italian Chocolate Salami", price: "18", desc: "Dark chocolate, broken biscuit, butter and almond." }
     ]}
   ],
 
