@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="styles.css?v=30">
+<link rel="stylesheet" href="styles.css?v=31">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -100,26 +100,99 @@
 <!-- ===== HERO ===== -->
 <div id="nav-sentinel"></div>
 <header id="top" class="hero">
-  <img src="assets/bacino-banner.jpg" alt="Guests sharing an outdoor dinner at Bacino Italian Bistro at sunset" class="hero-bg">
-  <div class="hero-scrim"></div>
-  <div class="hero-content">
-    <div class="eyebrow eyebrow-gold">Cucina Italiana ·<br class="mobile-break"> Pasir&nbsp;Panjang</div>
-    <h1 class="hero-title">A little taste&nbsp;of Turin,&nbsp;in Singapore.</h1>
-    <p class="hero-copy">Family recipes, traditional pizzas and hand-made pastas from Chef Francesco Sottile, served in a warm, unhurried trattoria on the west coast.</p>
-    <div class="hero-buttons">
-      <a href="https://www.google.com/maps/reserve/v/dine/c/12nKE7lbdag?source=pa&opi=89978449&hl=en-SG&gei=eFdWau2KNPChseMPhNicCQ&sourceurl=https://www.google.com/search?gs_ssp%3DeJzj4tVP1zc0zDYxTsnOis81YLRSNagwNkxJNLQ0NkkzTjS2sDQ2tDKoMDNKskgxTUo2Tk5MM7EwSPFiS0pMzszLBwAXzhGl%26q%3Dbacino%26oq%3Dbacino%26pf%3Dop%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn btn-fill reserve-btn">
-        <i class="fa-solid fa-utensils"></i>Book your table
-      </a>
-      <a href="#menu" class="btn btn-outline-cream">Explore our menus</a>
+  <div class="hero-carousel" id="heroCarousel">
+
+    <div class="hero-slide active" data-slide="0">
+      <img src="assets/bacino-banner.jpg" alt="Guests sharing an outdoor dinner at Bacino Italian Bistro at sunset" class="hero-bg">
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <div class="eyebrow eyebrow-gold">Cucina Italiana ·<br class="mobile-break"> Pasir&nbsp;Panjang</div>
+        <h1 class="hero-title">A little taste&nbsp;of Turin,&nbsp;in Singapore.</h1>
+        <p class="hero-copy">Family recipes, traditional pizzas and hand-made pastas from Chef Francesco Sottile, served in a warm, unhurried trattoria on the west coast.</p>
+        <div class="hero-buttons">
+          <a href="https://www.google.com/maps/reserve/v/dine/c/12nKE7lbdag?source=pa&opi=89978449&hl=en-SG&gei=eFdWau2KNPChseMPhNicCQ&sourceurl=https://www.google.com/search?gs_ssp%3DeJzj4tVP1zc0zDYxTsnOis81YLRSNagwNkxJNLQ0NkkzTjS2sDQ2tDKoMDNKskgxTUo2Tk5MM7EwSPFiS0pMzszLBwAXzhGl%26q%3Dbacino%26oq%3Dbacino%26pf%3Dop%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn btn-fill reserve-btn">
+            <i class="fa-solid fa-utensils"></i>Book your table
+          </a>
+          <a href="#menu" class="btn btn-outline-cream">Explore our menus</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener" aria-label="Tripadvisor" class="social-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6.005-5.998 5.99 5.99 0 0 0-1.966-4.435L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.907C13.943 8.138 12 10.43 12 13.1c0-2.671-1.94-4.962-4.5-5.938A11.612 11.612 0 0 1 12 6.255zM6.002 9.157a3.997 3.997 0 0 1 4.049 4.006 4.006 4.006 0 0 1-4.049 4.007 4.006 4.006 0 0 1-4.05-4.007 3.997 3.997 0 0 1 4.05-4.006zm11.997 0a4.006 4.006 0 0 1 4.05 4.006 4.006 4.006 0 0 1-4.05 4.007 3.997 3.997 0 0 1-4.048-4.007 3.997 3.997 0 0 1 4.048-4.006zm-11.998 1.93a2.076 2.076 0 1 0 .002 4.153 2.076 2.076 0 0 0-.002-4.153zm12 0a2.076 2.076 0 1 0 .002 4.153 2.076 2.076 0 0 0-.002-4.153z"></path></svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="hero-socials">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener" aria-label="Tripadvisor" class="social-icon">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6.005-5.998 5.99 5.99 0 0 0-1.966-4.435L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.907C13.943 8.138 12 10.43 12 13.1c0-2.671-1.94-4.962-4.5-5.938A11.612 11.612 0 0 1 12 6.255zM6.002 9.157a3.997 3.997 0 0 1 4.049 4.006 4.006 4.006 0 0 1-4.049 4.007 4.006 4.006 0 0 1-4.05-4.007 3.997 3.997 0 0 1 4.05-4.006zm11.997 0a4.006 4.006 0 0 1 4.05 4.006 4.006 4.006 0 0 1-4.05 4.007 3.997 3.997 0 0 1-4.048-4.007 3.997 3.997 0 0 1 4.048-4.006zm-11.998 1.93a2.076 2.076 0 1 0 .002 4.153 2.076 2.076 0 0 0-.002-4.153zm12 0a2.076 2.076 0 1 0 .002 4.153 2.076 2.076 0 0 0-.002-4.153z"></path></svg>
-      </a>
+
+    <div class="hero-slide" data-slide="1">
+      <img src="assets/bacino-cheers.jpg" alt="Friends raising a toast over dinner at Bacino Italian Bistro" class="hero-bg">
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <div class="eyebrow eyebrow-gold">Good Drinks · Great Food ·<br class="mobile-break"> Good Times</div>
+        <h1 class="hero-title">Happy&nbsp;<span class="serif-accent">Hour!</span></h1>
+        <div class="club-price-badge hero-badge">
+          <div class="label">Happy Hour</div>
+          <div class="amount">9PM</div>
+          <div class="period">Tue&ndash;Sun</div>
+        </div>
+        <p class="hero-copy">Special prices on selected drinks, all day, every day from Tuesday to Sunday. Good wine, good company, no reservation required.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-fill">
+            <i class="fa-solid fa-champagne-glasses"></i>View drinks menu
+          </a>
+          <a href="https://www.google.com/maps/reserve/v/dine/c/12nKE7lbdag?source=pa&opi=89978449&hl=en-SG&gei=eFdWau2KNPChseMPhNicCQ&sourceurl=https://www.google.com/search?gs_ssp%3DeJzj4tVP1zc0zDYxTsnOis81YLRSNagwNkxJNLQ0NkkzTjS2sDQ2tDKoMDNKskgxTUo2Tk5MM7EwSPFiS0pMzszLBwAXzhGl%26q%3Dbacino%26oq%3Dbacino%26pf%3Dop%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn btn-outline-cream reserve-btn">Reserve a table</a>
+        </div>
+      </div>
     </div>
+
+    <div class="hero-slide" data-slide="2">
+      <img src="assets/bacino-club-88-family.jpg" alt="Family celebrating together over dinner at Bacino" class="hero-bg">
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <div class="eyebrow eyebrow-gold">Bacino Club 88</div>
+        <h1 class="hero-title">Exclusive privileges&nbsp;<span class="serif-accent">await.</span></h1>
+        <p class="hero-copy">Join the Bacino family for S$88 a year and unlock 10% off dine-in, all-day happy hour, a birthday treat and more.</p>
+        <div class="hero-buttons">
+          <a href="club-88/" class="btn btn-fill">
+            <i class="fa-solid fa-star"></i>Join Bacino Club 88
+          </a>
+          <a href="club-88/#benefits" class="btn btn-outline-cream">See benefits</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide-plain" data-slide="3">
+      <div class="hero-content">
+        <div class="eyebrow eyebrow-gold">Authentic Italian, Home-Made</div>
+        <h1 class="hero-title">Take a taste&nbsp;<span class="serif-accent">home.</span></h1>
+        <p class="hero-copy">Jarred sauces, home-made limoncello and extra virgin olive oil, made in-house and ready to take away.</p>
+        <div class="hero-takeaway-list">
+          <div class="hero-takeaway-item"><i class="fa-solid fa-jar"></i>Tomato</div>
+          <div class="hero-takeaway-item"><i class="fa-solid fa-pepper-hot"></i>Arrabbiata</div>
+          <div class="hero-takeaway-item"><i class="fa-solid fa-fish"></i>Puttanesca</div>
+          <div class="hero-takeaway-item"><i class="fa-solid fa-drumstick-bite"></i>Bolognese</div>
+          <div class="hero-takeaway-item"><i class="fa-solid fa-lemon"></i>Limoncello</div>
+          <div class="hero-takeaway-item"><i class="fa-solid fa-wine-bottle"></i>Olive Oil</div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#visit" class="btn btn-fill">
+            <i class="fa-solid fa-bag-shopping"></i>Get in touch to order
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button type="button" class="hero-arrow hero-arrow-prev" id="heroPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+  <button type="button" class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="hero-dots" id="heroDots" role="tablist" aria-label="Homepage banner slides">
+    <button type="button" class="hero-dot active" data-slide="0" aria-label="Slide 1" aria-selected="true"></button>
+    <button type="button" class="hero-dot" data-slide="1" aria-label="Slide 2" aria-selected="false"></button>
+    <button type="button" class="hero-dot" data-slide="2" aria-label="Slide 3" aria-selected="false"></button>
+    <button type="button" class="hero-dot" data-slide="3" aria-label="Slide 4" aria-selected="false"></button>
   </div>
 </header>
 
@@ -311,5 +384,6 @@
 <script src="data.js?v=27"></script>
 <script src="script.js?v=9"></script>
 <script src="nav-toggle.js"></script>
+<script src="hero-carousel.js?v=1"></script>
 </body>
 </html>
