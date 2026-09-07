@@ -63,8 +63,8 @@ const MENU_DATA = {
       { name: "Filetto Di Manzo", price: "45", desc: "Grilled beef tenderloin." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato.", special: true },
       { name: "Costoletta D'Agnello", price: "45", desc: "Grilled lamb rack." },
-      { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g).", special: true },
       { name: "Grilled Iberico Pork", price: "40", desc: "Served with mixed vegetables and caramelised onion." },
+      { name: "Costoletta alla Milanese or Grilled", price: "18/100g", desc: "Fried breaded veal chop or grilled veal chop (approx. 500–1000g).", special: true },
       { name: "Branzino Al Cartoccio", price: "45", desc: "Oven-baked whole seabass." },
       { name: "Sous Vide Cod Fish", price: "40", desc: "Served with home-made pumpkin purée." }
     ]},
