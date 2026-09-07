@@ -172,9 +172,9 @@ br.mobile-break { display: none; }
 }
 .hero-slide.active { opacity: 1; visibility: visible; z-index: 1; }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero-bg-club88 { object-position: 75% center; }
+.hero-bg-club88 { object-position: 25% center; }
 @media (min-width: 821px) {
-  .hero-bg-club88 { object-position: 50% 15%; }
+  .hero-bg-club88 { object-position: 40% center; }
 }
 .hero-scrim {
   position: absolute; inset: 0; pointer-events: none;
