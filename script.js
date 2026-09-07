@@ -168,6 +168,18 @@
     });
   }
 
+  /* ===== Hero CTAs ===== */
+  const heroDrinksCta = document.getElementById("heroDrinksCta");
+  if (heroDrinksCta) {
+    heroDrinksCta.addEventListener("click", (e) => {
+      e.preventDefault();
+      state.section = "drinks";
+      state.tab = sectionData("drinks")[0].key;
+      renderMenu();
+      document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
   /* ===== Menu ===== */
   const sectionSwitchEl = document.getElementById("section-switch");
   const catTabsEl = document.getElementById("cat-tabs");
