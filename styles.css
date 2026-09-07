@@ -223,6 +223,7 @@ br.mobile-break { display: none; }
 }
 
 /* ===== Hero carousel controls ===== */
+.hero-badge-wrap { display: inline-flex; flex-direction: column; align-items: center; max-width: 100%; }
 .hero-badge { width: 150px; height: 150px; margin: 8px 0 30px; }
 .hero-takeaway-list {
   display: flex; flex-wrap: wrap; gap: 14px 22px;
