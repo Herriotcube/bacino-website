@@ -286,6 +286,15 @@
         line.appendChild(badge);
       }
 
+      if (item.isNew) {
+        const badge = document.createElement("img");
+        badge.className = "menu-item-badge";
+        badge.src = "assets/new-badge-small.png";
+        badge.alt = "New";
+        badge.title = "New";
+        line.appendChild(badge);
+      }
+
       const leader = document.createElement("span");
       leader.className = "menu-item-leader";
       line.appendChild(leader);

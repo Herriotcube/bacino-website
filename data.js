@@ -100,9 +100,9 @@ const MENU_DATA = {
 
   specials: [
     { key: "specials", label: "Chef's Specials", note: "Francesco's signature creations. Ask your server about availability.", items: [
-      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies with filling of breadcrumbs, black olive and garlic." },
-      { name: "Home-Made Pappardelle with Lamb Ragù", price: "40", desc: "Flat pasta with lamb ragù sauce." },
-      { name: "Home-Made Spaghetti Alla Bottarga", price: "42", desc: "Cooked in crab bisque with prawn, cherry tomato and bottarga." },
+      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies with filling of breadcrumbs, black olive and garlic.", isNew: true },
+      { name: "Home-Made Pappardelle with Lamb Ragù", price: "40", desc: "Flat pasta with lamb ragù sauce.", isNew: true },
+      { name: "Home-Made Spaghetti Alla Bottarga", price: "42", desc: "Cooked in crab bisque with prawn, cherry tomato and bottarga.", isNew: true },
       { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic." },
       { name: "Pepperoni Pizza", price: "18 / 30", desc: "Tomato sauce, Salami Milano, mozzarella, smoked cheese, black olive and red onion." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato." },

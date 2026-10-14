@@ -101,6 +101,7 @@
     if (item.heading) parts.push("heading: " + str(item.heading));
     if (item.orAlt) parts.push("orAlt: true");
     if (item.special) parts.push("special: true");
+    if (item.isNew) parts.push("isNew: true");
     return "{ " + parts.join(", ") + " }";
   }
   function serializeCategory(cat) {
@@ -303,6 +304,7 @@
         var flags = document.createElement("div");
         flags.className = "item-flags";
         flags.appendChild(checkbox(item.special, " Chef's special", function (v) { item.special = v || undefined; }));
+        flags.appendChild(checkbox(item.isNew, " \"New!\" badge", function (v) { item.isNew = v || undefined; }));
         if (isSetlunch) {
           var headingInput = textInput(item.heading, function (v) { item.heading = v || undefined; });
           headingInput.placeholder = "e.g. Main Course";
