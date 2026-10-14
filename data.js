@@ -6,6 +6,7 @@ const MENU_DATA = {
       { name: "Parmigiana Di Melanzane", price: "23", desc: "Sliced eggplant layered with cheese and tomato sauce." },
       { name: "Oliva Ascolana", price: "20", desc: "Deep-fried breaded green olives, stuffed with mixed meat." },
       { name: "Calamari Fritti", price: "20", desc: "Deep-fried breaded squid." },
+      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies with filling of breadcrumbs, black olive and garlic.", special: true },
       { name: "Porchetta", price: "23", desc: "Home-made roasted pork belly." },
       { name: "Fresh Mussels", price: "26", desc: "Cooked with tomato sauce or white wine." },
       { name: "Arancini", price: "20", desc: "Deep-fried breaded rice ball, stuffed with mixed meat and cheese." },
@@ -29,10 +30,10 @@ const MENU_DATA = {
     { key: "pasta", label: "Pasta & Risotto", items: [
       { name: "Home-Made Lasagna", price: "27", desc: "Flat pasta layered with meat sauce, béchamel and parmigiano." },
       { name: "Spaghetti Aglio E Olio", price: "19", desc: "Garlic, chilli and olive oil (add tiger prawn, $2 each)." },
-      { name: "Home-Made Lamb Ragù Ravioli", price: "40", desc: "Ravioli filled with minced lamb, cooked in lamb ragù sauce.", special: true },
+      { name: "Home-Made Pappardelle with Lamb Ragù", price: "40", desc: "Flat pasta with lamb ragù sauce.", special: true },
       { name: "Fettuccine Bolognese", price: "26", desc: "Rich, flavoured mixed-meat tomato sauce." },
       { name: "Spaghetti / Linguine Vongole", price: "27", desc: "Clams, white wine, olive oil and garlic." },
-      { name: "Home-Made Tagliolini Al Nero Di Seppia", price: "43", desc: "Squid ink pasta with cuttlefish, carrot, onion, celery, green pea and bottarga.", special: true },
+      { name: "Home-Made Spaghetti Alla Bottarga", price: "42", desc: "Cooked in crab bisque with prawn, cherry tomato and bottarga.", special: true },
       { name: "Spaghetti Seafood", price: "29", desc: "Mixed seafood, tomato sauce, olive oil and garlic." },
       { name: "Penne Arrabbiata", price: "22", desc: "Fresh tomatoes and chilli pepper." },
       { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic.", special: true },
@@ -59,7 +60,6 @@ const MENU_DATA = {
       { name: "Vegetarian", price: "14 / 24", desc: "Tomato sauce, mozzarella, zucchini, eggplant, artichoke, bell pepper." }
     ]},
     { key: "mains", label: "Meat & Fish", items: [
-      { name: "Calamari Ripieni", price: "28", desc: "Stuffed calamari, slow-cooked with tomato sauce.", special: true },
       { name: "Filetto Di Manzo", price: "45", desc: "Grilled beef tenderloin." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato.", special: true },
       { name: "Costoletta D'Agnello", price: "45", desc: "Grilled lamb rack." },
@@ -100,9 +100,9 @@ const MENU_DATA = {
 
   specials: [
     { key: "specials", label: "Chef's Specials", note: "Francesco's signature creations. Ask your server about availability.", items: [
-      { name: "Calamari Ripieni", price: "28", desc: "Stuffed calamari, slow-cooked with tomato sauce." },
-      { name: "Home-Made Lamb Ragù Ravioli", price: "40", desc: "Ravioli filled with minced lamb, cooked in lamb ragù sauce." },
-      { name: "Home-Made Tagliolini Al Nero Di Seppia", price: "43", desc: "Squid ink pasta with cuttlefish, carrot, onion, celery, green pea and bottarga." },
+      { name: "Alici Ripiene Fritte", price: "24", desc: "Deep-fried fresh anchovies with filling of breadcrumbs, black olive and garlic." },
+      { name: "Home-Made Pappardelle with Lamb Ragù", price: "40", desc: "Flat pasta with lamb ragù sauce." },
+      { name: "Home-Made Spaghetti Alla Bottarga", price: "42", desc: "Cooked in crab bisque with prawn, cherry tomato and bottarga." },
       { name: "Lobster Linguine", price: "43", desc: "Lobster with light tomato sauce, olive oil and garlic." },
       { name: "Pepperoni Pizza", price: "18 / 30", desc: "Tomato sauce, Salami Milano, mozzarella, smoked cheese, black olive and red onion." },
       { name: "Osso Buco", price: "48", desc: "Veal shank braised with vegetable broth, served with mashed potato." },
