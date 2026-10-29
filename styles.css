@@ -716,6 +716,7 @@ br.mobile-break { display: none; }
   .footer-brand { flex-direction: column; gap: 10px; }
   .footer-logo-row { justify-content: center; }
   br.mobile-break { display: inline; }
+  .club-promo-dot { display: none; }
 }
 @media (max-width: 640px) {
   .cards3 { grid-template-columns: 1fr; }
@@ -834,6 +835,22 @@ br.mobile-break { display: none; }
 }
 .club-hero-inner { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
 .club-hero .eyebrow { justify-content: center; display: flex; }
+/* Time-limited offer call-out at the top of the Club 88 hero */
+.club-promo-callout {
+  position: relative; overflow: hidden;
+  max-width: 600px; margin: 14px auto 34px; padding: 24px 28px 22px;
+  border: 1.5px solid var(--gold-eyebrow); border-radius: 18px;
+  background: rgba(20, 12, 8, 0.62);
+  box-shadow: 0 0 0 5px rgba(230, 199, 154, 0.08), 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+.club-promo-callout::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px;
+  background: linear-gradient(90deg, #1f7a4d 0 33.33%, #efe9dc 33.33% 66.66%, #b23a2e 66.66% 100%);
+}
+.club-promo-eyebrow { font-size: 13px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-eyebrow); margin-bottom: 8px; }
+.club-promo-headline { font-size: clamp(28px, 4.6vw, 42px); font-weight: 800; letter-spacing: -0.01em; line-height: 1.15; color: var(--cream-alt); }
+.club-promo-headline span { color: var(--gold-eyebrow); white-space: nowrap; }
+.club-promo-sub { margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #ddcfb4; }
 .club-hero-title {
   font-size: clamp(40px, 5.4vw, 68px);
   font-weight: 800; letter-spacing: -0.02em; line-height: 1.05;
