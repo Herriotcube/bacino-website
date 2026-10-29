@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="styles.css?v=39">
+<link rel="stylesheet" href="styles.css?v=40">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -111,7 +111,23 @@
 <header id="top" class="hero">
   <div class="hero-carousel" id="heroCarousel">
 
-    <div class="hero-slide active" data-slide="0">
+    <div class="hero-slide hero-slide-promo active" data-slide="0" data-until="2026-11-08T23:59:59+08:00">
+      <div class="promo-stage">
+        <img src="assets/anniversary-week-banner.jpg" width="1600" height="800" alt="Bacino Italian Bistro 1st Anniversary Week Special, 3 to 8 November 2026, Tuesday to Sunday. Bacino Club members enjoy 10% plus an additional 5% off when dining in." class="promo-banner">
+        <div class="promo-details">
+          <div class="eyebrow eyebrow-gold promo-text">1st Anniversary Week Special &middot; 3&ndash;8 Nov 2026</div>
+          <p class="promo-copy promo-text">Tuesday to Sunday. Bacino Club members enjoy 10% plus an additional 5% off when you dine in.</p>
+          <div class="hero-buttons">
+            <a href="https://www.google.com/maps/reserve/v/dine/c/12nKE7lbdag?source=pa&opi=89978449&hl=en-SG&gei=eFdWau2KNPChseMPhNicCQ&sourceurl=https://www.google.com/search?gs_ssp%3DeJzj4tVP1zc0zDYxTsnOis81YLRSNagwNkxJNLQ0NkkzTjS2sDQ2tDKoMDNKskgxTUo2Tk5MM7EwSPFiS0pMzszLBwAXzhGl%26q%3Dbacino%26oq%3Dbacino%26pf%3Dop%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn btn-fill reserve-btn">
+              <i class="fa-solid fa-utensils"></i>Book your table
+            </a>
+            <a href="club-88/" class="btn btn-outline-cream">Join Bacino Club 88</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="1">
       <img src="assets/bacino-banner.jpg" alt="Guests sharing an outdoor dinner at Bacino Italian Bistro at sunset" class="hero-bg">
       <div class="hero-scrim"></div>
       <div class="hero-content">
@@ -135,7 +151,7 @@
       </div>
     </div>
 
-    <div class="hero-slide" data-slide="1">
+    <div class="hero-slide" data-slide="2">
       <img src="assets/hero-happy-hour.jpg" alt="Wine, an aperitivo and bruschetta on the table during Bacino's Happy Hour" class="hero-bg">
       <div class="hero-scrim"></div>
       <div class="hero-content">
@@ -154,22 +170,6 @@
             <i class="fa-solid fa-champagne-glasses"></i>View drinks menu
           </a>
           <a href="https://www.google.com/maps/reserve/v/dine/c/12nKE7lbdag?source=pa&opi=89978449&hl=en-SG&gei=eFdWau2KNPChseMPhNicCQ&sourceurl=https://www.google.com/search?gs_ssp%3DeJzj4tVP1zc0zDYxTsnOis81YLRSNagwNkxJNLQ0NkkzTjS2sDQ2tDKoMDNKskgxTUo2Tk5MM7EwSPFiS0pMzszLBwAXzhGl%26q%3Dbacino%26oq%3Dbacino%26pf%3Dop%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn btn-outline-cream reserve-btn">Reserve a table</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-slide" data-slide="2">
-      <img src="assets/hero-club-88.jpg" alt="Bacino Club 88 member raising a glass of wine" class="hero-bg hero-bg-club88">
-      <div class="hero-scrim"></div>
-      <div class="hero-content">
-        <div class="eyebrow eyebrow-gold">Bacino Club 88</div>
-        <h1 class="hero-title">Exclusive privileges&nbsp;<span class="serif-accent">await.</span></h1>
-        <p class="hero-copy">Join the Bacino family for S$88 a year and unlock 10% off dine-in, all-day happy hour, a birthday treat and more.</p>
-        <div class="hero-buttons">
-          <a href="club-88/" class="btn btn-fill">
-            <i class="fa-solid fa-star"></i>Join Bacino Club 88
-          </a>
-          <a href="club-88/#benefits" class="btn btn-outline-cream">See benefits</a>
         </div>
       </div>
     </div>
@@ -397,6 +397,6 @@
 <script src="data.js?v=29"></script>
 <script src="script.js?v=11"></script>
 <script src="nav-toggle.js"></script>
-<script src="hero-carousel.js?v=1"></script>
+<script src="hero-carousel.js?v=2"></script>
 </body>
 </html>

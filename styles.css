@@ -172,10 +172,22 @@ br.mobile-break { display: none; }
 }
 .hero-slide.active { opacity: 1; visibility: visible; z-index: 1; }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero-bg-club88 { object-position: 25% center; }
-@media (min-width: 821px) {
-  .hero-bg-club88 { object-position: 40% center; }
+/* Time-limited promo slide: shows the whole banner (never cropped), details + buttons underneath */
+.hero-slide-promo {
+  display: flex; align-items: center; justify-content: center;
+  padding: calc(var(--nav-height, 88px) + 12px) clamp(64px, 8vw, 112px) 80px;
+  background: radial-gradient(120% 120% at 50% 0%, #3a2e1c 0%, var(--ink) 60%, #17110d 100%);
 }
+.promo-stage { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.promo-banner {
+  display: block; height: auto; aspect-ratio: 2 / 1;
+  width: min(100%, calc((100vh - var(--nav-height, 88px) - 200px) * 2));
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(230, 199, 154, 0.25);
+}
+.promo-details { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.promo-details .hero-buttons { justify-content: center; }
+.promo-text { display: none; }
 .hero-scrim {
   position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(90deg, rgba(18, 12, 8, 0.78) 0%, rgba(18, 12, 8, 0.55) 42%, rgba(18, 12, 8, 0.12) 78%, rgba(18, 12, 8, 0.05) 100%);
@@ -676,6 +688,11 @@ br.mobile-break { display: none; }
   }
   .hero-buttons { justify-content: center; }
   .hero-socials { justify-content: center; }
+  .hero-slide-promo { padding: calc(var(--nav-height, 88px) + 16px) 16px 64px; }
+  .promo-banner { width: 100%; border-radius: 12px; }
+  .promo-text { display: block; }
+  .promo-details .eyebrow { margin-bottom: 8px; }
+  .promo-copy { font-size: 16px; line-height: 1.6; color: #ece3d3; max-width: 34ch; margin: 0 0 22px; }
   .hero-arrow { display: none; }
   .hero-takeaway-list { justify-content: center; }
   .visit2 { grid-template-columns: 1fr; }
